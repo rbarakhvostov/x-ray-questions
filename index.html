@@ -359,6 +359,117 @@
         display: none !important;
       }
 
+      /* Celebrations */
+      .celebration {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        pointer-events: none;
+        animation: celebrationFade 3s ease-out forwards;
+      }
+
+      .celebration-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        animation: celebrationPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      }
+
+      .celebration-emoji {
+        font-size: 72px;
+        line-height: 1;
+      }
+
+      .celebration-text {
+        font-size: 22px;
+        font-weight: 800;
+        color: #000000;
+        background: rgba(255, 255, 255, 1);
+        padding: 14px 28px;
+        border-radius: 16px;
+        border: 2px solid #000000;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+        white-space: nowrap;
+      }
+
+      @keyframes celebrationFade {
+        0% { opacity: 0; }
+        15% { opacity: 1; }
+        75% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+
+      @keyframes celebrationPop {
+        0% { opacity: 0; transform: scale(0.3); }
+        50% { opacity: 1; transform: scale(1.1); }
+        100% { opacity: 1; transform: scale(1); }
+      }
+
+      .celebration-salute .celebration-emoji {
+        animation: saluteBounce 0.6s ease-in-out infinite alternate;
+      }
+
+      @keyframes saluteBounce {
+        from { transform: translateY(0) rotate(-10deg); }
+        to { transform: translateY(-20px) rotate(10deg); }
+      }
+
+      .celebration-heart .celebration-emoji {
+        animation: heartBeat 1s ease-in-out infinite;
+      }
+
+      @keyframes heartBeat {
+        0%, 100% { transform: scale(1); }
+        15% { transform: scale(1.3); }
+        30% { transform: scale(1); }
+        45% { transform: scale(1.2); }
+      }
+
+      .celebration-fire .celebration-emoji {
+        animation: fireFlicker 0.4s ease-in-out infinite alternate;
+      }
+
+      @keyframes fireFlicker {
+        from { transform: scale(1) rotate(-2deg); }
+        to { transform: scale(1.15) rotate(2deg); }
+      }
+
+      .celebration-flowers .celebration-emoji {
+        animation: flowersSway 0.8s ease-in-out infinite alternate;
+      }
+
+      @keyframes flowersSway {
+        from { transform: scale(1) rotate(-3deg); }
+        to { transform: scale(1.1) rotate(3deg); }
+      }
+
+      .celebration-brain .celebration-emoji {
+        animation: brainPulse 0.7s ease-in-out infinite alternate;
+      }
+
+      @keyframes brainPulse {
+        from { transform: scale(1); }
+        to { transform: scale(1.2); }
+      }
+
+      .celebration-bigheart .celebration-emoji {
+        animation: bigHeartBeat 0.6s ease-in-out infinite;
+      }
+
+      @keyframes bigHeartBeat {
+        0%, 100% { transform: scale(1); }
+        20% { transform: scale(1.35); }
+        40% { transform: scale(1); }
+        60% { transform: scale(1.25); }
+      }
+
       /* Results Screen */
       .results-screen {
         text-align: center;
@@ -451,7 +562,7 @@
       </div>
 
       <!-- Global Buttons (always visible during quiz) -->
-      <div style="display: flex; gap: 12px; margin-top: 10px;">
+      <div style="display: flex; gap: 12px; margin-top: 10px">
         <button
           class="btn btn-secondary"
           id="global-restart-btn"
@@ -481,6 +592,7 @@
         selectedOptions: [],
         isAnswered: false,
         answeredIndices: new Set(),
+        correctStreak: 0,
       };
 
       // DOM Elements
@@ -510,6 +622,65 @@
       const shuffleArray = (array) =>
         [...array].sort(() => Math.random() - 0.5);
 
+      function triggerCelebration(isCorrect) {
+        if (!isCorrect) return;
+
+        const existing = document.querySelector(".celebration");
+        if (existing) existing.remove();
+
+        const outer = document.createElement("div");
+        outer.className = "celebration";
+
+        const inner = document.createElement("div");
+        inner.className = "celebration-inner";
+
+        if (state.correctStreak % 50 === 0) {
+          inner.classList.add("celebration-bigheart");
+          inner.innerHTML = `
+            <span class="celebration-emoji">❤️‍🔥❤️‍🔥❤️‍🔥</span>
+            <span class="celebration-text">Люблю тебя!!!</span>
+          `;
+        } else if (state.correctStreak % 25 === 0) {
+          inner.classList.add("celebration-brain");
+          inner.innerHTML = `
+            <span class="celebration-emoji">🧠🧠🧠</span>
+            <span class="celebration-text">Супермозг!!!</span>
+          `;
+        } else if (state.correctStreak % 20 === 0) {
+          inner.classList.add("celebration-flowers");
+          inner.innerHTML = `
+            <span class="celebration-emoji">🌷🌻🌹🌷🌻🌹</span>
+            <span class="celebration-text">Вау. Ты нереальная!</span>
+          `;
+        } else if (state.correctStreak % 15 === 0) {
+          inner.classList.add("celebration-fire");
+          inner.innerHTML = `
+            <span class="celebration-emoji">🔥🔥🔥</span>
+            <span class="celebration-text">Ну ты голова!</span>
+          `;
+        } else if (state.correctStreak % 10 === 0) {
+          inner.classList.add("celebration-salute");
+          inner.innerHTML = `
+            <span class="celebration-emoji">🎉</span>
+            <span class="celebration-emoji">🎊</span>
+            <span class="celebration-emoji">🥳</span>
+            <span class="celebration-text">Маринка, ты умничка!!!</span>
+          `;
+        } else if (state.correctStreak % 5 === 0) {
+          inner.classList.add("celebration-heart");
+          inner.innerHTML = `
+            <span class="celebration-emoji">❤️</span>
+            <span class="celebration-text">Ты крутая!</span>
+          `;
+        }
+
+        if (inner.className !== "celebration-inner") {
+          outer.appendChild(inner);
+          document.body.appendChild(outer);
+          setTimeout(() => outer.remove(), 3100);
+        }
+      }
+
       function saveState() {
         localStorage.setItem(
           "radiologyQuizState",
@@ -519,6 +690,7 @@
             correctCount: state.correctCount,
             wrongCount: state.wrongCount,
             answeredIndices: [...state.answeredIndices],
+            correctStreak: state.correctStreak,
           }),
         );
       }
@@ -532,6 +704,7 @@
           state.correctCount = parsed.correctCount;
           state.wrongCount = parsed.wrongCount;
           state.answeredIndices = new Set(parsed.answeredIndices || []);
+          state.correctStreak = parsed.correctStreak || 0;
           return true;
         }
         return false;
@@ -550,6 +723,7 @@
           state.correctCount = 0;
           state.wrongCount = 0;
           state.answeredIndices = new Set();
+          state.correctStreak = 0;
         } else {
           // Skip already answered questions on reload
           while (
@@ -592,10 +766,14 @@
         const normalizedOptions = q.options.map(normalize);
 
         const parts = q.correct_answer.split(",").map((p) => normalize(p));
-        const matchingParts = parts.filter((p) => normalizedOptions.includes(p));
+        const matchingParts = parts.filter((p) =>
+          normalizedOptions.includes(p),
+        );
 
         const correctAnswers =
-          matchingParts.length > 0 ? matchingParts : [normalize(q.correct_answer)];
+          matchingParts.length > 0
+            ? matchingParts
+            : [normalize(q.correct_answer)];
         const isMultiple = correctAnswers.length > 1;
 
         // Animation reset
@@ -664,10 +842,14 @@
         const normalizedOptions = q.options.map(normalize);
 
         const parts = q.correct_answer.split(",").map((p) => normalize(p));
-        const matchingParts = parts.filter((p) => normalizedOptions.includes(p));
+        const matchingParts = parts.filter((p) =>
+          normalizedOptions.includes(p),
+        );
 
         const correctAnswers =
-          matchingParts.length > 0 ? matchingParts : [normalize(q.correct_answer)];
+          matchingParts.length > 0
+            ? matchingParts
+            : [normalize(q.correct_answer)];
         const userAnswers = state.selectedOptions.map(normalize);
 
         const isCorrect =
@@ -676,9 +858,13 @@
 
         if (isCorrect) {
           state.correctCount++;
+          state.correctStreak++;
         } else {
           state.wrongCount++;
+          state.correctStreak = 0;
         }
+
+        triggerCelebration(isCorrect);
 
         // Visual feedback
         document.querySelectorAll(".option").forEach((el) => {
