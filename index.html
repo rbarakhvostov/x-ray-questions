@@ -450,15 +450,25 @@
         </div>
       </div>
 
-      <!-- Global Shuffle Button (always visible during quiz) -->
-      <button
-        class="btn btn-secondary"
-        id="global-shuffle-btn"
-        style="margin-top: 10px"
-        onclick="restartQuiz(true)"
-      >
-        🔀 Перемешать вопросы
-      </button>
+      <!-- Global Buttons (always visible during quiz) -->
+      <div style="display: flex; gap: 12px; margin-top: 10px;">
+        <button
+          class="btn btn-secondary"
+          id="global-restart-btn"
+          style="flex: 1"
+          onclick="restartQuiz(false)"
+        >
+          🔄 Начать сначала
+        </button>
+        <button
+          class="btn btn-secondary"
+          id="global-shuffle-btn"
+          style="flex: 1"
+          onclick="restartQuiz(true)"
+        >
+          🔀 Перемешать вопросы
+        </button>
+      </div>
     </div>
 
     <script>
@@ -491,6 +501,7 @@
         finalScore: document.getElementById("final-score"),
         finalMessage: document.getElementById("final-message"),
         globalShuffleBtn: document.getElementById("global-shuffle-btn"),
+        restartBtn: document.getElementById("global-restart-btn"),
         questionCard: document.getElementById("question-card"),
       };
 
@@ -560,6 +571,7 @@
         els.quizArea.classList.remove("hidden");
         els.resultsArea.classList.add("hidden");
         els.globalShuffleBtn.classList.remove("hidden");
+        els.restartBtn.classList.remove("hidden");
 
         updateStats();
         renderQuestion();
@@ -712,6 +724,7 @@
       function showResults() {
         els.quizArea.classList.add("hidden");
         els.globalShuffleBtn.classList.add("hidden");
+        els.restartBtn.classList.add("hidden");
         els.resultsArea.classList.remove("hidden");
 
         const total = state.questions.length;
