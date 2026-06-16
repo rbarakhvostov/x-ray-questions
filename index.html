@@ -470,6 +470,7 @@
         wrongCount: 0,
         selectedOptions: [],
         isAnswered: false,
+        answeredIndices: new Set(),
       };
 
       // DOM Elements
@@ -506,6 +507,7 @@
             currentIndex: state.currentIndex,
             correctCount: state.correctCount,
             wrongCount: state.wrongCount,
+            answeredIndices: [...state.answeredIndices],
           }),
         );
       }
@@ -518,6 +520,7 @@
           state.currentIndex = parsed.currentIndex;
           state.correctCount = parsed.correctCount;
           state.wrongCount = parsed.wrongCount;
+          state.answeredIndices = new Set(parsed.answeredIndices || []);
           return true;
         }
         return false;
@@ -528,7 +531,6 @@
           state.questions = shuffle
             ? shuffleArray(rawQuestions)
             : [...rawQuestions];
-          // Shuffle options within each question as well
           state.questions = state.questions.map((q) => ({
             ...q,
             options: shuffleArray(q.options),
@@ -536,6 +538,20 @@
           state.currentIndex = 0;
           state.correctCount = 0;
           state.wrongCount = 0;
+          state.answeredIndices = new Set();
+        } else {
+          // Skip already answered questions on reload
+          while (
+            state.currentIndex < state.questions.length &&
+            state.answeredIndices.has(state.currentIndex)
+          ) {
+            state.currentIndex++;
+          }
+          // If all answered, go to results
+          if (state.currentIndex >= state.questions.length) {
+            showResults();
+            return;
+          }
         }
 
         state.selectedOptions = [];
@@ -561,7 +577,13 @@
 
       function renderQuestion() {
         const q = state.questions[state.currentIndex];
-        const correctAnswers = q.correct_answer.split(",").map(normalize);
+        const normalizedOptions = q.options.map(normalize);
+
+        const parts = q.correct_answer.split(",").map((p) => normalize(p));
+        const matchingParts = parts.filter((p) => normalizedOptions.includes(p));
+
+        const correctAnswers =
+          matchingParts.length > 0 ? matchingParts : [normalize(q.correct_answer)];
         const isMultiple = correctAnswers.length > 1;
 
         // Animation reset
@@ -625,7 +647,15 @@
       function checkAnswer() {
         state.isAnswered = true;
         const q = state.questions[state.currentIndex];
-        const correctAnswers = q.correct_answer.split(",").map(normalize);
+        state.answeredIndices.add(state.currentIndex);
+
+        const normalizedOptions = q.options.map(normalize);
+
+        const parts = q.correct_answer.split(",").map((p) => normalize(p));
+        const matchingParts = parts.filter((p) => normalizedOptions.includes(p));
+
+        const correctAnswers =
+          matchingParts.length > 0 ? matchingParts : [normalize(q.correct_answer)];
         const userAnswers = state.selectedOptions.map(normalize);
 
         const isCorrect =
