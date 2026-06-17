@@ -620,7 +620,7 @@
           style="flex: 1"
           onclick="restartQuiz(false)"
         >
-          🔄 Начать сначала
+          Начать сначала
         </button>
         <button
           class="btn btn-secondary"
@@ -628,7 +628,7 @@
           style="flex: 1"
           onclick="restartQuiz(true)"
         >
-          🔀 Перемешать вопросы
+          Перемешать вопросы
         </button>
       </div>
     </div>
@@ -700,7 +700,7 @@
         } else if (state.correctStreak % 20 === 0) {
           inner.classList.add("celebration-flowers");
           inner.innerHTML = `
-            <span class="celebration-emoji">🌷🌻🌹🌷🌻🌹</span>
+            <span class="celebration-emoji">🌷🌻🌹</span>
             <span class="celebration-text">Вау. Ты нереальная!</span>
           `;
         } else if (state.correctStreak % 15 === 0) {
@@ -715,7 +715,7 @@
             <span class="celebration-emoji">🎉</span>
             <span class="celebration-emoji">🎊</span>
             <span class="celebration-emoji">🥳</span>
-            <span class="celebration-text">Маринка, ты умничка!!!</span>
+            <span class="celebration-text">Ты умничка!!!</span>
           `;
         } else if (state.correctStreak % 5 === 0) {
           inner.classList.add("celebration-heart");
