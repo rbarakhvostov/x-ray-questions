@@ -1,0 +1,19 @@
+.results-screen {
+  text-align: center;
+  padding: 40px 20px;
+  animation: slideUp 0.5s ease-out;
+}
+
+.results-score {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 20px 0;
+}
+
+.results-message {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}

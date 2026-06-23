@@ -1,0 +1,21 @@
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.global-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.global-actions .btn {
+  flex: 1;
+}
+
+.results-actions {
+  flex-direction: column;
+}

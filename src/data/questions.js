@@ -1,4 +1,4 @@
-const rawQuestions = [
+export const rawQuestions = [
   {
     question_number: 1,
     question_text: "Усиливающие экраны обрабатываются:",

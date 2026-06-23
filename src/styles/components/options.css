@@ -1,0 +1,151 @@
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.option {
+  padding: 16px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+}
+
+.option:hover:not(.disabled) {
+  border-color: var(--primary);
+  background: #eff6ff;
+}
+
+.option.selected {
+  border-color: var(--primary);
+  background: #eff6ff;
+  color: var(--primary-hover);
+}
+
+.option.correct {
+  border-color: var(--success);
+  background: var(--success-bg);
+  color: #065f46;
+}
+
+.option.incorrect {
+  border-color: var(--error);
+  background: var(--error-bg);
+  color: #991b1b;
+}
+
+.option.missed {
+  border-color: var(--missed);
+  background: var(--missed-bg);
+  color: #92400e;
+}
+
+.option.disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.option-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.option.multiple-choice .option-indicator {
+  border-radius: 6px;
+}
+
+.option.selected .option-indicator {
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+.option.selected .option-indicator::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+}
+
+.option.multiple-choice.selected .option-indicator::after {
+  border-radius: 2px;
+  width: 10px;
+  height: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg) translate(1px, -1px);
+  background: transparent;
+}
+
+.option.correct .option-indicator {
+  border-color: var(--success);
+  background: var(--success);
+}
+
+.option.correct .option-indicator::after {
+  content: "✓";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  transform: none;
+  width: auto;
+  height: auto;
+  background: transparent;
+}
+
+.option.incorrect .option-indicator {
+  border-color: var(--error);
+  background: var(--error);
+}
+
+.option.incorrect .option-indicator::after {
+  content: "✕";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  transform: none;
+  width: auto;
+  height: auto;
+  background: transparent;
+}
+
+.option.missed .option-indicator {
+  border-color: var(--missed);
+  background: var(--missed);
+}
+
+.option.missed .option-indicator::after {
+  content: "!";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  transform: none;
+  width: auto;
+  height: auto;
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  .option {
+    padding: 14px;
+    font-size: 14.5px;
+  }
+}
