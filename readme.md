@@ -2,4 +2,3 @@
 
 [https://x-ray-training.netlify.app/](https://x-ray-training.netlify.app/)
 
-### Пропущенные номера: 53, 68, 109, 126, 131, 172, 181, 182

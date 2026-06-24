@@ -560,6 +560,17 @@ export const rawQuestions = [
     correct_answer: "на 1-2 см выше гребней подвздошных костей",
   },
   {
+    question_number: 53,
+    question_text:
+      "Рентгенологическое исследование пищевода при подозрении на перфорацию инородным телом проводится:",
+    options: [
+      "густой бариевой взвесью",
+      "водорастворимым контрастом",
+      "жидкой бариевой взвесью",
+    ],
+    correct_answer: "водорастворимым контрастом",
+  },
+  {
     question_number: 54,
     question_text: "Проведение маммографии наиболее информативно:",
     options: [
@@ -703,16 +714,28 @@ export const rawQuestions = [
     correct_answer: "наполненное состояние",
   },
   {
+    question_number: 68,
+    question_text: 
+      "При выполнении обзорной рентгенографии органов брюшной полости:",
+    options: [
+      "снимок должен охватывать область от 10 ребра до нижнего края лобка",
+      "снимок должен охватывать область от 5 ребра до нижнего края лобка",
+      "снимок должен охватывать область от 10 ребра до пупка",
+      "снимок должен охватывать область от 12 ребра до нижнего края лобка"
+    ],
+    correct_answer: "снимок должен охватывать область от 10 ребра до нижнего края лобка"
+  },
+  {
     question_number: 69,
     question_text:
       "Ротация стопы при рентгенографии тазобедренного сустава в прямой проекции составляет:",
     options: [
-      "15-20° кнутри",
-      "10-12° кнаружи",
-      "10-12° кнутри",
-      "12-15° кнутри",
+      "15-20° к нутри",
+      "10-12° к наружи",
+      "10-12° к нутри",
+      "12-15° к нутри",
     ],
-    correct_answer: "10-12° кнутри",
+    correct_answer: "10-12° к нутри",
   },
   {
     question_number: 70,
@@ -1138,6 +1161,16 @@ export const rawQuestions = [
     correct_answer: "все ответы правильные",
   },
   {
+    question_number: 109,
+    question_text: "Что включает в себя правильная подготовка к рентгенологическому исследованию толстой кишки:",
+    options: [
+      "отказ от приема пищи, слабительное днем перед исследованием, клизмы вечером и утром",
+      "отказ от приема пищи и воды, слабительное днем перед исследованием, клизмы вечером и утром",
+      "отказ от приема пищи и воды, слабительное вечером перед исследованием, клизмы вечером и утром"
+    ],
+    correct_answer: "отказ от приема пищи, слабительное днем перед исследованием, клизмы вечером и утром"
+  },
+  {
     question_number: 110,
     question_text:
       "В какой проекции необходимо исследовать больного при острой кишечной непроходимости:",
@@ -1315,7 +1348,7 @@ export const rawQuestions = [
     correct_answer: "до 5 мм",
   },
   {
-    question_number: 127,
+    question_number: 126,
     question_text: "Уровень расположения нижнего полюса левой почки в норме:",
     options: [
       "нижний край Th12",
@@ -1327,7 +1360,7 @@ export const rawQuestions = [
     correct_answer: "верхний край L3",
   },
   {
-    question_number: 128,
+    question_number: 127,
     question_text:
       "Какая правильная укладка пациента при выполнении обзорной урографии:",
     options: [
@@ -1340,7 +1373,7 @@ export const rawQuestions = [
       "лежа на спине, при этом срединная сагиттальная плоскость проходит по середине стола и/или кассеты, руки расположены по бокам, не прижаты к телу",
   },
   {
-    question_number: 129,
+    question_number: 128,
     question_text: "Что говорит об 'отключенной почке':",
     options: [
       "неровность контуров почки",
@@ -1352,7 +1385,7 @@ export const rawQuestions = [
     correct_answer: "отсутствие контрастирования чашечно-лоханочной системы",
   },
   {
-    question_number: 130,
+    question_number: 129,
     question_text:
       "Для лучшего исследования мочевого пузыря какая должна быть степень его наполнения:",
     options: [
@@ -1363,7 +1396,18 @@ export const rawQuestions = [
     correct_answer: "наполненное состояние",
   },
   {
-    question_number: 132,
+    question_number: 130,
+    question_text: "При обзорной рентгенографии что должен охватывать снимок:",
+    options: [
+      "снимок должен охватывать область от 10 ребра до нижнего края лобка",
+      "снимок должен охватывать область от 12 ребра до нижнего края лобка",
+      "снимок должен охватывать область от 10 ребра до пупка",
+      "снимок должен охватывать область от 5 ребра до нижнего края лобка"
+    ],
+    correct_answer: "снимок должен охватывать область от 10 ребра до нижнего края лобка"
+  },
+  {
+    question_number: 131,
     question_text: "Чем отделяется решетчатый лабиринт от глазницы:",
     options: [
       "бумажной пластинкой",
@@ -1374,7 +1418,7 @@ export const rawQuestions = [
     correct_answer: "бумажной пластинкой",
   },
   {
-    question_number: 133,
+    question_number: 132,
     question_text: "С чем граничит нижняя стенка лобной пазухи:",
     options: [
       "орбитой",
@@ -1385,7 +1429,7 @@ export const rawQuestions = [
     correct_answer: "орбитой",
   },
   {
-    question_number: 134,
+    question_number: 133,
     question_text: "С чем граничит наружная стенка клиновидной пазухи:",
     options: [
       "гипофизом",
@@ -1396,19 +1440,19 @@ export const rawQuestions = [
     correct_answer: "внутренней сонной артерией",
   },
   {
-    question_number: 135,
+    question_number: 134,
     question_text: "С чем граничит нижняя стенка верхнечелюстной пазухи:",
     options: ["крылонебной ямкой", "полостью носа", "орбитой", "полостью рта"],
     correct_answer: "полостью рта",
   },
   {
-    question_number: 136,
+    question_number: 135,
     question_text: "С чем граничит внутренняя стенка верхнечелюстной пазухи:",
     options: ["крылонебной ямкой", "полостью носа", "орбитой", "полостью рта"],
     correct_answer: "полостью носа",
   },
   {
-    question_number: 137,
+    question_number: 136,
     question_text: "Как проводится рентгенография носа и околоносовых пазух:",
     options: [
       "боковой проекции головы",
@@ -1419,7 +1463,7 @@ export const rawQuestions = [
     correct_answer: "подбородочной укладке, боковой проекции головы",
   },
   {
-    question_number: 138,
+    question_number: 137,
     question_text:
       "Что выявляется на рентгенограммах височной кости по Шюллеру:",
     options: [
@@ -1431,7 +1475,7 @@ export const rawQuestions = [
     correct_answer: "структура сосцевидного отростка, крыша барабанной полости",
   },
   {
-    question_number: 139,
+    question_number: 138,
     question_text: "Что определяется на рентгенограммах по Майеру:",
     options: [
       "лабиринт",
@@ -1442,7 +1486,7 @@ export const rawQuestions = [
       "костные стенки наружного слухового прохода, надбарабанное углубление",
   },
   {
-    question_number: 140,
+    question_number: 139,
     question_text:
       "Как выполняется рентгенография околоносовых пазух при исследовании черепа:",
     options: [
@@ -1454,7 +1498,7 @@ export const rawQuestions = [
     correct_answer: "вертикальном положении, стоя",
   },
   {
-    question_number: 141,
+    question_number: 140,
     question_text:
       "Какие оптимальные укладки для визуализации пирамид являются:",
     options: [
@@ -1468,7 +1512,7 @@ export const rawQuestions = [
       "косой снимок пирамиды по Шюллеру, поперечный снимок пирамиды по Стенверсу, продольный снимок пирамиды по Майеру",
   },
   {
-    question_number: 142,
+    question_number: 141,
     question_text:
       "Вход в глазницу, ее стенки, иногда малое и большое крылья клиновидной кости, верхняя глазничная щель визуализируются на рентгенограммах в:",
     options: [
@@ -1482,7 +1526,7 @@ export const rawQuestions = [
       "носо-подбородочной проекции, носо-лобной проекции, боковой проекции",
   },
   {
-    question_number: 143,
+    question_number: 142,
     question_text:
       "Отверстия канала зрительного нерва, вход в глазницу, решетчатые ячейки отображаются на снимках, выполненных в:",
     options: [
@@ -1494,7 +1538,7 @@ export const rawQuestions = [
     correct_answer: "передней косой проекции, по Резе",
   },
   {
-    question_number: 144,
+    question_number: 143,
     question_text:
       "Наибольшую информацию о состоянии костей лицевого черепа даёт какая рентгенограмма:",
     options: [
@@ -1506,13 +1550,13 @@ export const rawQuestions = [
     correct_answer: "носо-лобная",
   },
   {
-    question_number: 145,
+    question_number: 144,
     question_text: "Укажите опорные точки при рентгенографии глазниц:",
     options: ["лоб", "подбородок-нос", "нос-лоб", "подбородок"],
     correct_answer: "нос-лоб",
   },
   {
-    question_number: 146,
+    question_number: 145,
     question_text: "Укажите опорные точки при рентгенографии глазницы по Резе:",
     options: [
       "кончик носа - подбородок",
@@ -1523,7 +1567,7 @@ export const rawQuestions = [
     correct_answer: "надбровье - кончик носа - скуловая кость",
   },
   {
-    question_number: 147,
+    question_number: 146,
     question_text: "В каких проекциях лучше всего могут быть изучены глазницы:",
     options: [
       "передняя фронтальная проекция",
@@ -1535,14 +1579,14 @@ export const rawQuestions = [
       "передняя сагиттальная проекция, передняя полуаксиальная проекция",
   },
   {
-    question_number: 148,
+    question_number: 147,
     question_text:
       "Какой метод исследования позволяет получить более отчетливое изображение нижней глазничной щели:",
     options: ["Шюллера", "Майера", "Гартмана", "Стенверса"],
     correct_answer: "Гартмана",
   },
   {
-    question_number: 149,
+    question_number: 148,
     question_text:
       "Для определения инородного тела глазницы, какую укладку головы следует выбрать:",
     options: [
@@ -1554,7 +1598,7 @@ export const rawQuestions = [
     correct_answer: "носо-лобная",
   },
   {
-    question_number: 150,
+    question_number: 149,
     question_text:
       "Какая проекция применяется для рентгенографии турецкого седла:",
     options: [
@@ -1566,7 +1610,7 @@ export const rawQuestions = [
     correct_answer: "боковая прицельная проекция",
   },
   {
-    question_number: 151,
+    question_number: 150,
     question_text:
       "Для рентгенографии чего применяется снимок черепа в носо-подбородочной проекции:",
     options: [
@@ -1579,7 +1623,7 @@ export const rawQuestions = [
     correct_answer: "придаточных полостей носа",
   },
   {
-    question_number: 152,
+    question_number: 151,
     question_text: "Когда наиболее эффективно проведение маммографии:",
     options: [
       "во второй половине менструального цикла",
@@ -1589,7 +1633,7 @@ export const rawQuestions = [
     correct_answer: "с 5 по 12 день менструального цикла",
   },
   {
-    question_number: 153,
+    question_number: 152,
     question_text: "Дайте определение понятию дуктография:",
     options: [
       "снимок молочной железы с увеличением",
@@ -1599,7 +1643,7 @@ export const rawQuestions = [
     correct_answer: "контрастирование протоков молочной железы",
   },
   {
-    question_number: 154,
+    question_number: 153,
     question_text: "Как часто проводится маммография по диспансеризации:",
     options: [
       "по желанию",
@@ -1610,20 +1654,20 @@ export const rawQuestions = [
     correct_answer: "один раз в два года",
   },
   {
-    question_number: 155,
+    question_number: 154,
     question_text:
       "Какое количество снимков является стандартным при проведении маммографии:",
     options: ["шесть", "три", "два", "четыре"],
     correct_answer: "четыре",
   },
   {
-    question_number: 156,
+    question_number: 155,
     question_text: "Какое анодное напряжение используется при маммографии:",
     options: ["100 – 120 кв.", "20 – 50 кв.", "80 – 100 кв."],
     correct_answer: "20 – 50 кв.",
   },
   {
-    question_number: 157,
+    question_number: 156,
     question_text:
       "При массовых проверочных исследованиях рентгенографию молочных желез необходимо производить:",
     options: [
@@ -1634,7 +1678,7 @@ export const rawQuestions = [
     correct_answer: "в прямой и косой проекции",
   },
   {
-    question_number: 158,
+    question_number: 157,
     question_text:
       "Для чего используется рентгенография молочных желез с прямым увеличением:",
     options: [
@@ -1645,7 +1689,7 @@ export const rawQuestions = [
     correct_answer: "для уточнения наличия микрокальцинатов",
   },
   {
-    question_number: 159,
+    question_number: 158,
     question_text:
       "Какое условие является обязательным при проведении маммографии:",
     options: [
@@ -1656,7 +1700,7 @@ export const rawQuestions = [
     correct_answer: "компрессия",
   },
   {
-    question_number: 160,
+    question_number: 159,
     question_text: "Какие ограничения применения рентгеновской маммографии:",
     options: [
       "не имеет ограничений",
@@ -1667,14 +1711,14 @@ export const rawQuestions = [
       "ограничено у молодых женщин с плотной структурой молочных желёз",
   },
   {
-    question_number: 161,
+    question_number: 160,
     question_text:
       "Как часто проводится скрининговое исследование на рак молочной железы (маммография) женщинам в возрасте старше 50:",
     options: ["1 раз в два года", "1 раз в три года", "1 раз в год"],
     correct_answer: "1 раз в два года",
   },
   {
-    question_number: 162,
+    question_number: 161,
     question_text: "Основные рентгенологические проявления легочной патологии:",
     options: [
       "изменение рентгенологической картины корней легких",
@@ -1687,7 +1731,7 @@ export const rawQuestions = [
       "затемнение, просветление, изменение легочного рисунка, изменение рентгенологической картины корней легких",
   },
   {
-    question_number: 163,
+    question_number: 162,
     question_text:
       "Синдром обширного и ограниченного просветления при рентгенографии легких может свидетельствовать о следующих заболеваниях:",
     options: [
@@ -1701,7 +1745,7 @@ export const rawQuestions = [
       "пневмоторакс, эмфизема легких, клапанная эмфизема как следствие обтурации бронха, тромбоэмболия легочной артерии",
   },
   {
-    question_number: 164,
+    question_number: 163,
     question_text:
       "На прямой рентгенограмме верхний этаж средостения находится:",
     options: [
@@ -1712,7 +1756,7 @@ export const rawQuestions = [
     correct_answer: "выше линии, проведенной на уровне 2 ребра",
   },
   {
-    question_number: 165,
+    question_number: 164,
     question_text:
       "На фазу вдоха при проведении рентгенографии у детей раннего возраста указывает:",
     options: [
@@ -1723,7 +1767,7 @@ export const rawQuestions = [
       "четко видимый задний сегмент девятого ребра без наложения на него тени диафрагмы",
   },
   {
-    question_number: 166,
+    question_number: 165,
     question_text:
       "«Кричащее легкое» у детей раннего возраста ошибочно можно принять за:",
     options: [
@@ -1735,7 +1779,7 @@ export const rawQuestions = [
       "наличие инфильтрации (пневмония), расширение тени сердца (картина венозного полнокровия)",
   },
   {
-    question_number: 167,
+    question_number: 166,
     question_text:
       "Укажите основные рентгенологические особенности переломов детского возраста:",
     options: [
@@ -1751,7 +1795,7 @@ export const rawQuestions = [
       "поднадкостничные переломы, переломы по эпиметафизарной зоне роста",
   },
   {
-    question_number: 168,
+    question_number: 167,
     question_text:
       "Укажите наиболее характерное положение костных отломков на снимке при поднадкостничных переломах:",
     options: [
@@ -1766,7 +1810,7 @@ export const rawQuestions = [
       "отсутствие бокового смещения отломков, возможно угловое смещение отломков",
   },
   {
-    question_number: 169,
+    question_number: 168,
     question_text:
       "За счет каких отделов осуществляется рост трубчатых костей в длину?",
     options: [
@@ -1780,7 +1824,7 @@ export const rawQuestions = [
     correct_answer: "метафизарные хрящи",
   },
   {
-    question_number: 170,
+    question_number: 169,
     question_text:
       "Назовите основную методику рентгенологического исследования костей и суставов у детей:",
     options: [
@@ -1793,7 +1837,7 @@ export const rawQuestions = [
     correct_answer: "рентгенография в двух взаимно перпендикулярных плоскостях",
   },
   {
-    question_number: 171,
+    question_number: 170,
     question_text:
       "Укажите основные рентгенологические признаки остеогенной саркомы трубчатой кости:",
     options: [
@@ -1807,7 +1851,7 @@ export const rawQuestions = [
       '"спикулообразный" или "козырьковый" периостоз в области метафиза, деструкция костной ткани, наличие мягкотканного компонента',
   },
   {
-    question_number: 173,
+    question_number: 171,
     question_text:
       "Химическое вещество, превращающее скрытое изображение в видимое, называется:",
     options: [
@@ -1820,7 +1864,7 @@ export const rawQuestions = [
     correct_answer: "проявляющее",
   },
   {
-    question_number: 174,
+    question_number: 172,
     question_text:
       "Фотохимический процесс, в результате которого галоидное серебро экспонированного светочувствительного слоя превращается в металлическое, называется:",
     options: [
@@ -1833,7 +1877,7 @@ export const rawQuestions = [
     correct_answer: "проявление",
   },
   {
-    question_number: 175,
+    question_number: 173,
     question_text:
       "Процесс получения с негатива обратного ему фотографического изображения называется:",
     options: [
@@ -1846,7 +1890,7 @@ export const rawQuestions = [
     correct_answer: "позитивный",
   },
   {
-    question_number: 176,
+    question_number: 174,
     question_text:
       "Химическое вещество, которое тормозит процесс проявления в той части светочувствительного слоя, которая не подвергалась действию света, называется:",
     options: [
@@ -1859,7 +1903,7 @@ export const rawQuestions = [
     correct_answer: "противовуалирующее",
   },
   {
-    question_number: 177,
+    question_number: 175,
     question_text:
       "Способность фотографического материала реагировать на световое излучение называется:",
     options: [
@@ -1872,7 +1916,7 @@ export const rawQuestions = [
     correct_answer: "светочувствительностью",
   },
   {
-    question_number: 178,
+    question_number: 176,
     question_text: "Турецкое седло лежит в:",
     options: [
       "лобной кости",
@@ -1883,7 +1927,7 @@ export const rawQuestions = [
     correct_answer: "клиновидной кости",
   },
   {
-    question_number: 179,
+    question_number: 177,
     question_text: "В обязанности рентгенлаборанта входит:",
     options: [
       "вести учетно-отчетную документацию",
@@ -1896,7 +1940,7 @@ export const rawQuestions = [
       "находиться у пульта управления во время просвечивания, следить за показаниями приборов, за состоянием рентген-аппаратуры, соблюдать правила трудового распорядка, технику безопасности, охраны здоровья, систематически повышать свою квалификацию, вести учетно-отчетную документацию",
   },
   {
-    question_number: 180,
+    question_number: 178,
     question_text: "Рентгенолаборант осуществляет:",
     options: [
       "оказание помощи врачу при выполнении сложных исследований, приготовление контрастных веществ и реактивов",
@@ -1909,7 +1953,7 @@ export const rawQuestions = [
       "выполнение снимков, оказание помощи врачу при выполнении сложных исследований, приготовление контрастных веществ и реактивов, своевременную подачу заявок на расходные материалы, надлежащее количество рентгенограмм, ведение учетно-отчетной документации",
   },
   {
-    question_number: 183,
+    question_number: 179,
     question_text:
       "Плоскость физиологической горизонтали при рентгенографии черепа в задней прямой проекции располагается:",
     options: [
@@ -1921,7 +1965,7 @@ export const rawQuestions = [
     correct_answer: "перпендикулярно плоскости стола",
   },
   {
-    question_number: 184,
+    question_number: 180,
     question_text:
       "Проверка кабинета при его приеме в эксплуатацию осуществляется:",
     options: [
@@ -1934,13 +1978,13 @@ export const rawQuestions = [
       "представителями территориальной группы радиационной безопасности",
   },
   {
-    question_number: 185,
+    question_number: 181,
     question_text: "При исследовании основания черепа применяются укладки:",
     options: ["прямые, боковые", "аксиальные", "касательные"],
     correct_answer: "аксиальные",
   },
   {
-    question_number: 186,
+    question_number: 182,
     question_text: "Факторы вредности, имеющиеся в рентгеновском кабинете:",
     options: [
       "радиационный фактор",
@@ -1952,7 +1996,7 @@ export const rawQuestions = [
       "токсическое действие свинца, радиационный фактор, недостаточность естественного освещения",
   },
   {
-    question_number: 187,
+    question_number: 183,
     question_text:
       "Первоочередные действия рентгенлаборанта при несчастном случае или неисправности оборудования:",
     options: [
@@ -1964,7 +2008,7 @@ export const rawQuestions = [
       "отключить главный сетевой рубильник и поставить в известность об этом зав. отделением",
   },
   {
-    question_number: 188,
+    question_number: 184,
     question_text: "В начале рабочего дня рентгенолаборант должен:",
     options: [
       "провести пробное включение аппарата",
@@ -1975,7 +2019,7 @@ export const rawQuestions = [
     correct_answer: "провести пробное включение аппарата",
   },
   {
-    question_number: 189,
+    question_number: 185,
     question_text:
       "Передвижные условия обследования создаются в районах с населением:",
     options: [
@@ -1987,26 +2031,26 @@ export const rawQuestions = [
     correct_answer: "20-30 тыс. чел",
   },
   {
-    question_number: 190,
+    question_number: 186,
     question_text: "В маркировке флюорографии должно быть:",
     options: ["фамилия", "номер и дата", "место обследования", "год рождения"],
     correct_answer: "номер и дата, место обследования",
   },
   {
-    question_number: 191,
+    question_number: 187,
     question_text:
       "При отсутствии патологических изменений на флюорограмме в карте делается отметка:",
     options: ["фл 052/у", "tbs", "N", "фл 051/у"],
     correct_answer: "N",
   },
   {
-    question_number: 192,
+    question_number: 188,
     question_text: "Формат пленки при флюорографии:",
     options: ["100x100", "70x70", "50x50", "120x120"],
     correct_answer: "70x70, 100x100",
   },
   {
-    question_number: 193,
+    question_number: 189,
     question_text: "Диагностическая флюорография это:",
     options: [
       "крупнокадровая",
@@ -2017,7 +2061,7 @@ export const rawQuestions = [
     correct_answer: "повторное исследование в ОЗ",
   },
   {
-    question_number: 194,
+    question_number: 190,
     question_text:
       "Не подлежат профилактическим рентгенологическим исследованиям:",
     options: [
@@ -2028,14 +2072,14 @@ export const rawQuestions = [
     correct_answer: "беременные женщины, дети до 17 лет",
   },
   {
-    question_number: 195,
+    question_number: 191,
     question_text:
       "Фокусное расстояние при R-графии органов грудной клетки в прямой проекции:",
     options: ["0,8 м", "1 м", "1,5-2,0 м"],
     correct_answer: "1,5-2,0 м",
   },
   {
-    question_number: 196,
+    question_number: 192,
     question_text:
       "При R-графии органов грудной клетки в прямой проекции руки:",
     options: [
@@ -2046,21 +2090,21 @@ export const rawQuestions = [
     correct_answer: "согнуты в локтевых суставах и отведены вперед",
   },
   {
-    question_number: 197,
+    question_number: 193,
     question_text:
       "При рентгенографии грудной клетки пациент находится в положении:",
     options: ["ортоскопии", "латероскопии", "трохоскопии", "Тренделенбурга"],
     correct_answer: "ортоскопии",
   },
   {
-    question_number: 198,
+    question_number: 194,
     question_text:
       "Укажите неионные водорастворимые контрастные вещества для сосудистых исследований:",
     options: ["верографин", "омнипак", "уротраст", "гипак", "ультравист"],
     correct_answer: "ультравист, омнипак",
   },
   {
-    question_number: 199,
+    question_number: 195,
     question_text:
       "Перечислите контрастные препараты, используемые для ангиографии:",
     options: [
@@ -2074,7 +2118,7 @@ export const rawQuestions = [
     correct_answer: "оптирей, омнипак, ультравист",
   },
   {
-    question_number: 200,
+    question_number: 196,
     question_text: "Побочные реакции при внутрисосудистом введении ионных РКВ:",
     options: [
       "отек лица, слизистой полости рта и гортани, затруднение дыхания, удушье",
@@ -2089,7 +2133,7 @@ export const rawQuestions = [
       "чувство жара, головокружение, головная боль, озноб, зуд кожных покровов, крапивница, насморк, чихание, отек лица, слизистой полости рта и гортани, затруднение дыхания, удушье, тахи- или брадикардия, аритмия, изменения артериального давления, потеря сознания",
   },
   {
-    question_number: 201,
+    question_number: 197,
     question_text:
       "Каким путем вводится контрастное вещество при каротидной артериографии?",
     options: [
@@ -2102,7 +2146,7 @@ export const rawQuestions = [
     correct_answer: "путем чрескожной пункции a. carotis interna",
   },
   {
-    question_number: 202,
+    question_number: 198,
     question_text:
       "Как проводится предварительная проба (перед ангиографическим исследованием) на чувствительность к йодистым препаратам?",
     options: [
@@ -2115,7 +2159,7 @@ export const rawQuestions = [
       "за 1–2 дня до исследования путем внутривенного введения 2 мл к/в-ва",
   },
   {
-    question_number: 203,
+    question_number: 199,
     question_text: "Что такое радиофармацевтические препараты (РФП)?",
     options: [
       "антибиотики",
@@ -2127,7 +2171,7 @@ export const rawQuestions = [
       "диагностические или лечебные средства, содержащие радиоактивные нуклиды",
   },
   {
-    question_number: 204,
+    question_number: 200,
     question_text:
       "Диагностические радиофармацевтические препараты используют с целью:",
     options: [
@@ -2139,13 +2183,13 @@ export const rawQuestions = [
       "изучения анатомо-топографического состояния органов и систем организма, оценки функции различных органов и систем организма",
   },
   {
-    question_number: 205,
+    question_number: 201,
     question_text: "РФП бывают:",
     options: ["диагностические", "терапевтические", "все правильные ответы"],
     correct_answer: "все правильные ответы",
   },
   {
-    question_number: 206,
+    question_number: 202,
     question_text: "Использование РФП допустимо:",
     options: [
       "только в специальных радиодиагностических отделениях с соблюдением мер радиационной безопасности в отношении медперсонала",
@@ -2157,7 +2201,7 @@ export const rawQuestions = [
       "использование РФП допустимо только в специальных радиодиагностических отделениях с соблюдением мер радиационной безопасности как в отношении пациента и медперсонала, так и окружающей среды",
   },
   {
-    question_number: 207,
+    question_number: 203,
     question_text: "Основные пути выведения РФП из организма:",
     options: [
       "активно пить питьевую воду до 2.5-3 л (при отсутствии выраженной патологии почек)",
@@ -2168,7 +2212,7 @@ export const rawQuestions = [
     correct_answer: "все ответы правильные",
   },
   {
-    question_number: 208,
+    question_number: 204,
     question_text:
       "К допплерографии с использованием постоянной волны относится:",
     options: [
@@ -2181,7 +2225,7 @@ export const rawQuestions = [
     correct_answer: "частота и длина волны",
   },
   {
-    question_number: 209,
+    question_number: 205,
     question_text: "Частота Допплеровского смещения не зависит от:",
     options: [
       "скорости распространения ультразвука",
@@ -2193,14 +2237,14 @@ export const rawQuestions = [
     correct_answer: "амплитуды",
   },
   {
-    question_number: 210,
+    question_number: 206,
     question_text:
       "В норме в сосуде при допплерографии регистрируется течение потока:",
     options: ["ламинарное", "смешанное", "турбулентное"],
     correct_answer: "ламинарное",
   },
   {
-    question_number: 211,
+    question_number: 207,
     question_text: "В импульсном допплеровском режиме датчик излучает:",
     options: [
       "ультразвуковая волна излучается непрерывно",
@@ -2210,7 +2254,7 @@ export const rawQuestions = [
     correct_answer: "короткие по длительности синусоидальные импульсы",
   },
   {
-    question_number: 212,
+    question_number: 208,
     question_text: "В основе допплеровского режима производится:",
     options: [
       "анализ амплитуд и интенсивностей эхо-сигналов",
@@ -2223,7 +2267,7 @@ export const rawQuestions = [
       "анализ разности частот излучаемого и пришедшего в виде эхо ультразвука",
   },
   {
-    question_number: 213,
+    question_number: 209,
     question_text:
       "На чем основывается использование методики магнитно-резонансной томографии (МРТ)?",
     options: [
@@ -2237,7 +2281,7 @@ export const rawQuestions = [
     correct_answer: "на регистрации ядерно-магнитного резонанса",
   },
   {
-    question_number: 214,
+    question_number: 210,
     question_text: "Как измерить лучевую нагрузку при проведении МРТ?",
     options: [
       "в бэрах",
@@ -2249,14 +2293,14 @@ export const rawQuestions = [
     correct_answer: "лучевая нагрузка отсутствует",
   },
   {
-    question_number: 215,
+    question_number: 211,
     question_text:
       "Напряженность магнитного поля в аппаратах МРТ измеряется в единицах:",
     options: ["хаунсфилда", "тесла", "рентген", "ампер", "джоуль"],
     correct_answer: "тесла",
   },
   {
-    question_number: 216,
+    question_number: 212,
     question_text:
       "Абсолютные противопоказания к проведению МРТ челюстно-лицевой области:",
     options: [
@@ -2271,7 +2315,7 @@ export const rawQuestions = [
       "искусственные водители ритма, ферромагнитные клипсы на сосудах головного мозга, ферромагнитные имплантаты среднего уха, ферромагнитные имплантаты глаза, электронные имплантаты среднего уха",
   },
   {
-    question_number: 217,
+    question_number: 213,
     question_text: "Относительные противопоказания к проведению МРТ:",
     options: [
       "инсулиновые насосы",
@@ -2286,19 +2330,19 @@ export const rawQuestions = [
       "инсулиновые насосы, беременность, клаустрофобия, ферромагнитные клипсы на сосудах грудной клетки",
   },
   {
-    question_number: 218,
+    question_number: 214,
     question_text: "Когда были открыты рентгеновские лучи?",
     options: ["в 1880 г.", "в 1905 г.", "в 1915 г.", "в 1895 г."],
     correct_answer: "в 1895 г.",
   },
   {
-    question_number: 219,
+    question_number: 215,
     question_text: "Кто открыл рентгеновские лучи?",
     options: ["Х.Д. Румкорф", "В.К. Рентген", "Макс фон Лауэ", "А.Ф. Иоффе"],
     correct_answer: "В.К. Рентген",
   },
   {
-    question_number: 220,
+    question_number: 216,
     question_text:
       "Предельная доза лучевой нагрузки для персонала р/кабинета в неделю:",
     options: [
@@ -2310,7 +2354,7 @@ export const rawQuestions = [
     correct_answer: "0,4 мЗв (в неделю)",
   },
   {
-    question_number: 221,
+    question_number: 217,
     question_text:
       "Предельная доза лучевой нагрузки для персонала р/кабинета в год:",
     options: [
@@ -2322,7 +2366,7 @@ export const rawQuestions = [
     correct_answer: "20 мЗв (2 бэр)",
   },
   {
-    question_number: 222,
+    question_number: 218,
     question_text:
       "Кто обеспечивает проведение и учет индивидуальной дозиметрии сотрудников р/кабинета?",
     options: [
@@ -2334,7 +2378,7 @@ export const rawQuestions = [
     correct_answer: "ответственный за ИДК",
   },
   {
-    question_number: 223,
+    question_number: 219,
     question_text:
       "Как часто проводится профилактический ремонт аппаратуры и генеральная уборка в рентгеновском кабинете?",
     options: [
@@ -2346,7 +2390,7 @@ export const rawQuestions = [
     correct_answer: "не менее 1 раз в месяц",
   },
   {
-    question_number: 224,
+    question_number: 220,
     question_text: "Когда вводится должность старшего рентгенолаборанта?",
     options: [
       "при наличии в штате не менее 5 р/лаборантов",
@@ -2357,48 +2401,48 @@ export const rawQuestions = [
     correct_answer: "при наличии в штате не менее 5 р/лаборантов",
   },
   {
-    question_number: 225,
+    question_number: 221,
     question_text:
       "Кто осуществляет сбор и сдачу в гос. фонд серебросодержащих отходов?",
     options: ["рентгенолаборант", "снабженец", "санитарка", "врач-рентгенолог"],
     correct_answer: "рентгенолаборант",
   },
   {
-    question_number: 226,
+    question_number: 222,
     question_text:
       "Срок хранения рентгенограмм при отсутствии патологии должен быть:",
     options: ["0,5 года", "5 лет", "2 года", "1 год"],
     correct_answer: "5 лет",
   },
   {
-    question_number: 227,
+    question_number: 223,
     question_text:
       "Срок хранения рентгенограмм при наличии патологии должен быть:",
     options: ["5 лет", "1 год", "2 года", "0,5 года", "10 лет"],
     correct_answer: "10 лет",
   },
   {
-    question_number: 228,
+    question_number: 224,
     question_text: "Снимки пациентов детей хранятся в архиве:",
     options: ["5 лет", "7 лет", "10 лет", "15 лет"],
     correct_answer: "10 лет",
   },
   {
-    question_number: 229,
+    question_number: 225,
     question_text:
       "Какова продолжительность рабочего времени персонала рентген кабинета при 5-дневной рабочей неделе?",
     options: ["5,5 ч в день", "5 ч в день", "6,5 ч в день", "6 ч в день"],
     correct_answer: "6 ч в день",
   },
   {
-    question_number: 230,
+    question_number: 226,
     question_text:
       "При обследовании пациентов в палатах и операционных время обследования на передвижном аппарате норма времени на 1 снимок составляет:",
     options: ["30 минут", "10 минут", "15 минут", "20 минут"],
     correct_answer: "30 минут",
   },
   {
-    question_number: 231,
+    question_number: 227,
     question_text: "При р/обследовании детей до 7 лет время на один снимок:",
     options: [
       "увеличивается на 30 %",
@@ -2409,7 +2453,7 @@ export const rawQuestions = [
     correct_answer: "увеличивается на 25 %",
   },
   {
-    question_number: 232,
+    question_number: 228,
     question_text:
       "При обследовании пациентов с расстройствами психики время на одно р/обследование:",
     options: [
@@ -2421,68 +2465,68 @@ export const rawQuestions = [
     correct_answer: "увеличивается на 25 %",
   },
   {
-    question_number: 233,
+    question_number: 229,
     question_text:
       "Норма времени на рентгеноскопию органов грудной полости составляет:",
     options: ["10 мин", "15 мин", "5 мин", "20 мин"],
     correct_answer: "10 мин",
   },
   {
-    question_number: 234,
+    question_number: 230,
     question_text:
       "Норма времени на флюорографию грудной полости в одной проекции составляет:",
     options: ["10 мин", "1,5 условные единицы", "1 условная единица", "3 мин"],
     correct_answer: "3 мин",
   },
   {
-    question_number: 235,
+    question_number: 231,
     question_text:
       "Норма времени на рентгеноскопию и рентгенографию желудка по традиционной методике составляет:",
     options: ["10 мин", "2 условных единицы", "15 мин", "1 условная единица"],
     correct_answer: "2 условных единицы",
   },
   {
-    question_number: 236,
+    question_number: 232,
     question_text:
       "Норма времени на обзорную рентгенографию брюшной полости соответствует:",
     options: ["2 условным единицам", "15 мин", "3 условным единицам", "10 мин"],
     correct_answer: "15 мин",
   },
   {
-    question_number: 237,
+    question_number: 233,
     question_text: "Норма времени на ирригоскопию составляет:",
     options: ["50 мин", "65 мин", "35 мин", "20 мин"],
     correct_answer: "35 мин",
   },
   {
-    question_number: 238,
+    question_number: 234,
     question_text:
       "Норма времени на ирригографию с двойным (барий + воздух) контрастированием составляет:",
     options: ["50 мин", "5 мин", "10 мин", "40 мин"],
     correct_answer: "50 мин",
   },
   {
-    question_number: 239,
+    question_number: 235,
     question_text:
       "Норма времени на одномоментное (первичное) двойное контрастирование толстой кишки составляет:",
     options: ["20 мин", "80 мин", "60 мин", "40 мин"],
     correct_answer: "40 мин",
   },
   {
-    question_number: 240,
+    question_number: 236,
     question_text:
       "Норма времени на функциональное исследование позвоночника составляет:",
     options: ["30 мин", "20 мин", "25 мин", "40 мин"],
     correct_answer: "20 мин",
   },
   {
-    question_number: 241,
+    question_number: 237,
     question_text: "Что больше в оценке р/исследований?",
     options: ["20 мин", "30 мин", "10 мин", "5 условных единиц"],
     correct_answer: "5 условных единиц",
   },
   {
-    question_number: 242,
+    question_number: 238,
     question_text: "Норма времени на экскреторную урографию составляет:",
     options: [
       "4,5 условные единицы",
@@ -2493,37 +2537,37 @@ export const rawQuestions = [
     correct_answer: "40 мин",
   },
   {
-    question_number: 243,
+    question_number: 239,
     question_text: "Норма времени на восходящую пиелографию составляет:",
     options: ["10 мин", "25 мин", "40 мин", "20 мин"],
     correct_answer: "40 мин",
   },
   {
-    question_number: 244,
+    question_number: 240,
     question_text: "Норма времени на восходящую цистографию составляет:",
     options: ["30 мин", "40 мин", "20 мин", "50 мин"],
     correct_answer: "20 мин",
   },
   {
-    question_number: 245,
+    question_number: 241,
     question_text: "Норма времени на проведение уретрографии составляет:",
     options: ["10 мин", "30 мин", "40 мин", "20 мин"],
     correct_answer: "20 мин",
   },
   {
-    question_number: 246,
+    question_number: 242,
     question_text: "Норма времени на флебографию малого таза составляет:",
     options: ["90 мин", "30 мин", "60 мин", "120 мин"],
     correct_answer: "60 мин",
   },
   {
-    question_number: 247,
+    question_number: 243,
     question_text: "Норма времени на проведение метросальпингографии:",
     options: ["20 мин", "30 мин", "40 мин", "10 мин"],
     correct_answer: "30 мин",
   },
   {
-    question_number: 248,
+    question_number: 244,
     question_text: "Норма времени на периферическую флебографию соответствует:",
     options: [
       "4 условным единицам",
@@ -2534,26 +2578,26 @@ export const rawQuestions = [
     correct_answer: "4 условным единицам",
   },
   {
-    question_number: 249,
+    question_number: 245,
     question_text: "Норма времени для проведения коронарографии составляет:",
     options: ["60 мин", "90 мин", "120 мин", "30 мин"],
     correct_answer: "90 мин",
   },
   {
-    question_number: 250,
+    question_number: 246,
     question_text:
       "Норма времени на томографию в одной проекции (один снимок) составляет:",
     options: ["15 мин", "30 мин", "20 мин", "10 мин"],
     correct_answer: "15 мин",
   },
   {
-    question_number: 251,
+    question_number: 247,
     question_text: "Норма времени на снимок зуба(ов) составляет:",
     options: ["15 мин", "8 мин", "7 мин", "5 мин"],
     correct_answer: "7 мин",
   },
   {
-    question_number: 252,
+    question_number: 248,
     question_text: "Норма времени на бронхографию соответствует:",
     options: [
       "2 условным единицам",
@@ -2564,13 +2608,13 @@ export const rawQuestions = [
     correct_answer: "4,5 условным единицам",
   },
   {
-    question_number: 253,
+    question_number: 249,
     question_text: "Норма времени на лимфографию составляет:",
     options: ["55 мин", "75 мин", "30 мин", "90 мин"],
     correct_answer: "90 мин",
   },
   {
-    question_number: 254,
+    question_number: 250,
     question_text: "Кто несет ответственность за лучевую нагрузку на пациента?",
     options: [
       "лечащий врач и врач-рентгенолог",
@@ -2581,7 +2625,7 @@ export const rawQuestions = [
     correct_answer: "лечащий врач и врач-рентгенолог",
   },
   {
-    question_number: 255,
+    question_number: 251,
     question_text: "При неотложных состояниях р/обследование осуществляется:",
     options: [
       "независимо от сроков предыдущего исследования",
@@ -2592,14 +2636,14 @@ export const rawQuestions = [
     correct_answer: "независимо от сроков предыдущего исследования",
   },
   {
-    question_number: 256,
+    question_number: 252,
     question_text:
       "При благоприятной эпидемиологической ситуации по туберкулезу флюорографию разрешается проводить:",
     options: ["с 15 лет", "с 16 лет", "с 12 лет", "с 17 лет"],
     correct_answer: "с 17 лет",
   },
   {
-    question_number: 257,
+    question_number: 253,
     question_text:
       "Профилактическое обследование органов грудной полости у детей с повышенным риском заболевания туберкулезом должно проводиться:",
     options: [
@@ -2611,7 +2655,7 @@ export const rawQuestions = [
     correct_answer: "с помощью рентгенографии на стационарных р/аппаратах",
   },
   {
-    question_number: 258,
+    question_number: 254,
     question_text:
       "У пациентов со злокачественными опухолями первое плановое р/обследование после операции должно проводиться:",
     options: [
@@ -2623,7 +2667,7 @@ export const rawQuestions = [
     correct_answer: "через 6 месяцев",
   },
   {
-    question_number: 259,
+    question_number: 255,
     question_text: "Рентгенологическое обследование можно проводить:",
     options: [
       "когда есть тубус",
@@ -2635,7 +2679,7 @@ export const rawQuestions = [
       "когда имеется дополнительный фильтр не менее 2-3 мм алюминия",
   },
   {
-    question_number: 260,
+    question_number: 256,
     question_text:
       "Ответственность за радиационную безопасность в лечебно-профилактическом учреждении несет:",
     options: [
@@ -2648,14 +2692,14 @@ export const rawQuestions = [
     correct_answer: "главный врач, заместитель главного врача",
   },
   {
-    question_number: 261,
+    question_number: 257,
     question_text:
       "При работе на р/аппаратах, не имеющих дистанционного управления, число обследований желудка и кишечника не должно превышать суммарно:",
     options: ["12 в неделю", "18 в неделю", "2 в день", "24 в неделю"],
     correct_answer: "18 в неделю",
   },
   {
-    question_number: 262,
+    question_number: 258,
     question_text:
       "Какой должна быть площадь процедурной в рентгенкабинете, где имеются поворотный стол-штатив, штатив для снимков и стойка для снимков?",
     options: [
@@ -2667,7 +2711,7 @@ export const rawQuestions = [
     correct_answer: "не менее 34 м2",
   },
   {
-    question_number: 263,
+    question_number: 259,
     question_text:
       "Какой должна быть площадь процедурной в рентгенкабинете, где имеется поворотный стол-штатив, универсальная стойка-штатив и стол-каталка?",
     options: [
@@ -2679,7 +2723,7 @@ export const rawQuestions = [
     correct_answer: "не менее 34 м2",
   },
   {
-    question_number: 264,
+    question_number: 260,
     question_text:
       "Какой должна быть площадь процедурной в рентгенкабинете, где имеется поворотный стол-штатив, имеющий дистанционное управление?",
     options: [
@@ -2691,7 +2735,7 @@ export const rawQuestions = [
     correct_answer: "не менее 24 м2",
   },
   {
-    question_number: 265,
+    question_number: 261,
     question_text:
       "Какой должна быть площадь процедурной в рентгенкабинете, где имеются универсальная стойка-штатив и стол-каталка?",
     options: [
@@ -2703,7 +2747,7 @@ export const rawQuestions = [
     correct_answer: "не менее 24 м2",
   },
   {
-    question_number: 266,
+    question_number: 262,
     question_text:
       "Какой должна быть площадь фотолаборатории на один р/кабинет?",
     options: [
@@ -2715,7 +2759,7 @@ export const rawQuestions = [
     correct_answer: "не менее 10 м2",
   },
   {
-    question_number: 267,
+    question_number: 263,
     question_text: "Какой должна быть площадь фотолаборатории на 2 р/кабинета?",
     options: [
       "не менее 10 м2",
@@ -2726,7 +2770,7 @@ export const rawQuestions = [
     correct_answer: "не менее 12 м2",
   },
   {
-    question_number: 268,
+    question_number: 264,
     question_text:
       "Какой должна быть площадь процедурной рентгеномаммографического кабинета?",
     options: [
@@ -2738,40 +2782,40 @@ export const rawQuestions = [
     correct_answer: "не менее 8 м2",
   },
   {
-    question_number: 269,
+    question_number: 265,
     question_text: "Какова площадь 1 погонного метра пленки?",
     options: ["0,35 м2", "0,035 м2", "35 м2", "3,5 м2"],
     correct_answer: "0,035 м2",
   },
   {
-    question_number: 270,
+    question_number: 266,
     question_text:
       "Сколько листов р/пленки размером 18x24 см содержится в 1000 погонных метров пленки?",
     options: ["1000 листов", "800 листов", "400 листов", "200 листов"],
     correct_answer: "800 листов",
   },
   {
-    question_number: 271,
+    question_number: 267,
     question_text:
       "Сколько листов р/пленки размером 24x30 см содержится в 1000 погонных метров пленки?",
     options: ["500 листов", "200 листов", "300 листов", "400 листов"],
     correct_answer: "500 листов",
   },
   {
-    question_number: 272,
+    question_number: 268,
     question_text:
       "Сколько листов р/пленки размером 30x40 см содержится в 1000 погонных метров пленки?",
     options: ["200 листов", "300 листов", "400 листов", "500 листов"],
     correct_answer: "300 листов",
   },
   {
-    question_number: 273,
+    question_number: 269,
     question_text: "Сколько погонных метров пленки содержится в 1 м2 р/пленки?",
     options: ["33,5 м", "21,3 м", "28,6 м", "15,0 м"],
     correct_answer: "28,6 м",
   },
   {
-    question_number: 274,
+    question_number: 270,
     question_text:
       "Среднегодовая потребность в р/пленке на стационарный р/аппарат составляет:",
     options: [
@@ -2783,7 +2827,7 @@ export const rawQuestions = [
     correct_answer: "9 000 м (315 м2)",
   },
   {
-    question_number: 275,
+    question_number: 271,
     question_text: "Можно ли размещать рентгеновские кабинеты в жилых домах?",
     options: [
       "можно при хорошо оборудованной защите",
@@ -2794,7 +2838,7 @@ export const rawQuestions = [
     correct_answer: "да, при определенных условиях",
   },
   {
-    question_number: 276,
+    question_number: 272,
     question_text:
       "Соответствие рентгеновского кабинета действующим нормативам определяет:",
     options: [
@@ -2806,21 +2850,21 @@ export const rawQuestions = [
     correct_answer: "технический паспорт, санитарный паспорт",
   },
   {
-    question_number: 277,
+    question_number: 273,
     question_text:
       "Какая методика рентгенологического исследования позволяет изучить органы послойно?",
     options: ["томография", "ангиография", "флюорография", "бронхография"],
     correct_answer: "томография",
   },
   {
-    question_number: 278,
+    question_number: 274,
     question_text:
       "С помощью какой рентгенологической методики изучается толстая кишка?",
     options: ["сиалография", "холеграфия", "маммография", "ирригоскопия"],
     correct_answer: "ирригоскопия",
   },
   {
-    question_number: 279,
+    question_number: 275,
     question_text:
       "Каковы преимущества цифровой (дигитальной) флюорографии перед обычной флюорографией?",
     options: [
@@ -2832,7 +2876,7 @@ export const rawQuestions = [
     correct_answer: "все перечисленные выше факторы",
   },
   {
-    question_number: 280,
+    question_number: 276,
     question_text:
       "Каким прибором измеряют величину сетевого напряжения в рентгеновском кабинете?",
     options: [
@@ -2844,7 +2888,7 @@ export const rawQuestions = [
     correct_answer: "вольтметром",
   },
   {
-    question_number: 281,
+    question_number: 277,
     question_text:
       "От чего зависит проникающая способность рентгеновского излучения?",
     options: [
@@ -2856,7 +2900,7 @@ export const rawQuestions = [
     correct_answer: "от напряжения на трубке",
   },
   {
-    question_number: 282,
+    question_number: 278,
     question_text:
       "Чем определяется количество излучения рентгеновской трубки?",
     options: [
@@ -2868,7 +2912,7 @@ export const rawQuestions = [
     correct_answer: "силой тока, временем экспонирования",
   },
   {
-    question_number: 283,
+    question_number: 279,
     question_text:
       "Что чаще всего приводит к браку рентгеновского изображения?",
     options: [
@@ -2880,7 +2924,7 @@ export const rawQuestions = [
     correct_answer: "контактная нерезкость",
   },
   {
-    question_number: 284,
+    question_number: 280,
     question_text:
       "Как получить нормально экспонированный снимок, если предыдущий оказался резко переэкспонированным?",
     options: [
@@ -2892,26 +2936,26 @@ export const rawQuestions = [
     correct_answer: "уменьшить интенсивность излучения",
   },
   {
-    question_number: 285,
+    question_number: 281,
     question_text:
       "Всегда ли следует прибегать к диафрагмированию и экранированию объекта?",
     options: ["не всегда", "всегда", "никогда", "по медицинским показаниям"],
     correct_answer: "всегда",
   },
   {
-    question_number: 286,
+    question_number: 282,
     question_text: "Поддержания какой среды требует фиксирующий раствор?",
     options: ["нейтральной", "кислой", "щелочной", "всех трех сред"],
     correct_answer: "кислой",
   },
   {
-    question_number: 287,
+    question_number: 283,
     question_text: "Какова рабочая среда проявляющего раствора?",
     options: ["кисло-нейтральная", "кислая", "нейтральная", "щелочная"],
     correct_answer: "щелочная",
   },
   {
-    question_number: 288,
+    question_number: 284,
     question_text:
       "Какой раствор является источником серебросодержащих отходов?",
     options: [
@@ -2923,7 +2967,7 @@ export const rawQuestions = [
     correct_answer: "фиксирующий",
   },
   {
-    question_number: 289,
+    question_number: 285,
     question_text: "В целях избежания ошибок рентгенограммы маркируют:",
     options: [
       "тушью перед фиксированием",
@@ -2934,7 +2978,7 @@ export const rawQuestions = [
     correct_answer: "цифровым трафаретом перед экспонированием",
   },
   {
-    question_number: 290,
+    question_number: 286,
     question_text: "Наибольшую лучевую нагрузку дает:",
     options: [
       "флюорография",
@@ -2945,7 +2989,7 @@ export const rawQuestions = [
     correct_answer: "рентгеноскопия с люминесцентным экраном",
   },
   {
-    question_number: 291,
+    question_number: 287,
     question_text:
       "Источником электронов для получения р/лучей в трубке служит:",
     options: [
@@ -2957,7 +3001,7 @@ export const rawQuestions = [
     correct_answer: "нить накала",
   },
   {
-    question_number: 292,
+    question_number: 288,
     question_text: "Рентгеноскопия легких дает возможность увидеть:",
     options: [
       "состояние междолевой плевры",
@@ -2968,14 +3012,14 @@ export const rawQuestions = [
     correct_answer: "подвижность диафрагмы",
   },
   {
-    question_number: 293,
+    question_number: 289,
     question_text:
       "Какая проекция наиболее целесообразна для определения уменьшения средней доли легкого?",
     options: ["лордотическая", "прямая", "боковая", "косая"],
     correct_answer: "боковая",
   },
   {
-    question_number: 294,
+    question_number: 290,
     question_text: "Томография и зонография дает возможность определить:",
     options: [
       "пульсацию сердца",
@@ -2986,7 +3030,7 @@ export const rawQuestions = [
     correct_answer: "состояние легочной паренхимы и бронхов",
   },
   {
-    question_number: 295,
+    question_number: 291,
     question_text:
       "Какой метод диагностики наиболее информативен для выявления бронхоэктазов?",
     options: [
@@ -2998,7 +3042,7 @@ export const rawQuestions = [
     correct_answer: "бронхография",
   },
   {
-    question_number: 296,
+    question_number: 292,
     question_text:
       "Анатомическим субстратом понятия «корень легкого» являются:",
     options: [
@@ -3011,14 +3055,14 @@ export const rawQuestions = [
       "стволы артерий, вен, бронхи, лимфатические узлы, клетчатка",
   },
   {
-    question_number: 297,
+    question_number: 293,
     question_text:
       "На правом боковом снимке правый корень легкого относительно левого расположен:",
     options: ["кзади", "кпереди", "выше", "в одной плоскости"],
     correct_answer: "кпереди",
   },
   {
-    question_number: 298,
+    question_number: 294,
     question_text:
       "Основой сегментарного строения легкого является разветвление:",
     options: [
@@ -3030,7 +3074,7 @@ export const rawQuestions = [
     correct_answer: "легочных артерий и вен",
   },
   {
-    question_number: 299,
+    question_number: 295,
     question_text:
       "Имеют ли значение размеры тени в легком для применения специальных методов исследования?",
     options: [
@@ -3042,7 +3086,7 @@ export const rawQuestions = [
     correct_answer: "имеют существенное значение",
   },
   {
-    question_number: 300,
+    question_number: 296,
     question_text: "Туберкулезный ранний инфильтрат характеризуется:",
     options: [
       "неоднородным, треугольным по форме затемнением сегмента или доли легкого",
@@ -3053,7 +3097,7 @@ export const rawQuestions = [
       "округлым затемнением под ключицей размером около 4,5 см в диаметре",
   },
   {
-    question_number: 301,
+    question_number: 297,
     question_text:
       "Наиболее характерная локализация центрального рака легкого:",
     options: [
@@ -3065,7 +3109,7 @@ export const rawQuestions = [
     correct_answer: "корень легкого и прикорневая зона",
   },
   {
-    question_number: 302,
+    question_number: 298,
     question_text: "Как выглядит корень легкого при центральном раке легкого?",
     options: [
       "не виден",
@@ -3077,7 +3121,7 @@ export const rawQuestions = [
       "расширен, бесструктурен, сливается с тенью в легком и часто со срединной тенью",
   },
   {
-    question_number: 303,
+    question_number: 299,
     question_text:
       "Структура и контуры периферического рака лучше определяются на:",
     options: [
@@ -3089,7 +3133,7 @@ export const rawQuestions = [
     correct_answer: "томограммах",
   },
   {
-    question_number: 304,
+    question_number: 300,
     question_text:
       "Изменяется ли окружающая легочная ткань при периферическом раке легкого?",
     options: [
@@ -3101,7 +3145,7 @@ export const rawQuestions = [
     correct_answer: "иногда тяжистая дорожка от опухоли к корню",
   },
   {
-    question_number: 305,
+    question_number: 301,
     question_text:
       "Наиболее характерная локализация периферического рака легкого:",
     options: [
@@ -3113,14 +3157,14 @@ export const rawQuestions = [
     correct_answer: "верхняя доля",
   },
   {
-    question_number: 306,
+    question_number: 302,
     question_text:
       "Какая из перечисленных доброкачественных опухолей легких встречается чаще?",
     options: ["фиброма", "миома", "невринома", "аденома"],
     correct_answer: "аденома",
   },
   {
-    question_number: 307,
+    question_number: 303,
     question_text: "Расправление легких у новорожденных детей наступает в:",
     options: [
       "первые сутки",
@@ -3131,7 +3175,7 @@ export const rawQuestions = [
     correct_answer: "течение 48 ч",
   },
   {
-    question_number: 308,
+    question_number: 304,
     question_text: "Трахея у детей первых 2 лет жизни расположена:",
     options: [
       "изогнутый ход трахеи",
@@ -3141,7 +3185,7 @@ export const rawQuestions = [
     correct_answer: "с отклонением вправо",
   },
   {
-    question_number: 309,
+    question_number: 305,
     question_text:
       "Сосудистый рисунок можно определить у детей на рентгенограмме грудной клетки:",
     options: [
@@ -3153,13 +3197,13 @@ export const rawQuestions = [
     correct_answer: "с момента рождения",
   },
   {
-    question_number: 310,
+    question_number: 306,
     question_text: "Деформация грудной клетки возможна при:",
     options: ["пневмонии", "рахите", "бронхиолите", "бронхите"],
     correct_answer: "рахите",
   },
   {
-    question_number: 311,
+    question_number: 307,
     question_text:
       "Для какого метода необходимо применение внутривенного контрастного вещества?",
     options: [
@@ -3171,7 +3215,7 @@ export const rawQuestions = [
     correct_answer: "коронарографии",
   },
   {
-    question_number: 312,
+    question_number: 308,
     question_text: "Рельеф складок слизистой пищевода лучше выявляется:",
     options: [
       "при использовании релаксантов",
@@ -3182,7 +3226,7 @@ export const rawQuestions = [
     correct_answer: "после прохождения бариевого комка",
   },
   {
-    question_number: 313,
+    question_number: 309,
     question_text:
       "Наиболее простым способом введения газа в пищевод для его двойного контрастирования является:",
     options: [
@@ -3195,7 +3239,7 @@ export const rawQuestions = [
       "проглатывание больным воздуха вместе с бариевой взвесью (в виде нескольких, следующих друг за другом глотков)",
   },
   {
-    question_number: 314,
+    question_number: 310,
     question_text:
       "Наиболее информативной методикой для выявления объемных процессов в поджелудочной железе является:",
     options: [
@@ -3207,7 +3251,7 @@ export const rawQuestions = [
     correct_answer: "исследование желудка и кишечника с бариевой взвесью",
   },
   {
-    question_number: 315,
+    question_number: 311,
     question_text:
       "Для детального исследования рельефа слизистой тонкой кишки наиболее подходящим контрастным веществом является:",
     options: [
@@ -3219,7 +3263,7 @@ export const rawQuestions = [
     correct_answer: "обычная бариевая взвесь",
   },
   {
-    question_number: 316,
+    question_number: 312,
     question_text:
       "Основной методикой рентгенологического исследования ободочной кишки является:",
     options: [
@@ -3231,7 +3275,7 @@ export const rawQuestions = [
     correct_answer: "бариевая клизма",
   },
   {
-    question_number: 317,
+    question_number: 313,
     question_text:
       "Рентгенологическое исследование пищеварительного тракта через 24 часа после приема бария (по продолжению) применяется для:",
     options: [
@@ -3243,7 +3287,7 @@ export const rawQuestions = [
     correct_answer: "исследования илеоцекальной области",
   },
   {
-    question_number: 318,
+    question_number: 314,
     question_text:
       "Из перечисленных методик рентгенологического исследования билиарной системы при желчно-каменной болезни, наиболее распространенной и достаточно информативной является:",
     options: [
@@ -3255,7 +3299,7 @@ export const rawQuestions = [
     correct_answer: "внутривенная холецистохолангиография",
   },
   {
-    question_number: 319,
+    question_number: 315,
     question_text:
       "Методикой, уточняющей природу заболеваний при наличии объемного процесса в поджелудочной железе, осложненном механической желтухой, является:",
     options: [
@@ -3267,7 +3311,7 @@ export const rawQuestions = [
     correct_answer: "ретроградная холангиопанкреатография",
   },
   {
-    question_number: 320,
+    question_number: 316,
     question_text: "Прямая кишка по отношению к брюшине располагается:",
     options: [
       "по-разному, в зависимости от ее отдела",
@@ -3278,7 +3322,7 @@ export const rawQuestions = [
     correct_answer: "по-разному, в зависимости от ее отдела",
   },
   {
-    question_number: 321,
+    question_number: 317,
     question_text: "Из перечисленных отделов кишечника не имеет брыжейки:",
     options: [
       "двенадцатиперстная кишка",
@@ -3289,7 +3333,7 @@ export const rawQuestions = [
     correct_answer: "двенадцатиперстная кишка",
   },
   {
-    question_number: 322,
+    question_number: 318,
     question_text:
       "Обзорное исследование живота у новорожденных детей целесообразно выполнять с помощью:",
     options: [
@@ -3301,14 +3345,14 @@ export const rawQuestions = [
     correct_answer: "рентгенографии",
   },
   {
-    question_number: 323,
+    question_number: 319,
     question_text:
       "Сроки появления газа в петлях тонкой кишки у ребенка после рождения через:",
     options: ["15 мин", "30 мин", "6-8 ч", "1 ч"],
     correct_answer: "15 мин",
   },
   {
-    question_number: 324,
+    question_number: 320,
     question_text:
       "Основной рентгеноконтрастный препарат, применяемый для исследования органов пищеварения у детей:",
     options: [
@@ -3320,7 +3364,7 @@ export const rawQuestions = [
     correct_answer: "водная взвесь сернокислого бария",
   },
   {
-    question_number: 325,
+    question_number: 321,
     question_text: "Почки у здорового человека находятся на уровне:",
     options: [
       "1-5 поясничного позвонков",
@@ -3331,7 +3375,7 @@ export const rawQuestions = [
     correct_answer: "11 грудного — 3 поясничного позвонков",
   },
   {
-    question_number: 326,
+    question_number: 322,
     question_text:
       "Какую методику рентгенологического исследования Вы рекомендовали бы для диагностики заболеваний почки?",
     options: [
@@ -3343,7 +3387,7 @@ export const rawQuestions = [
     correct_answer: "выделительную урографию",
   },
   {
-    question_number: 327,
+    question_number: 323,
     question_text: "Просвет маточных труб изучается при помощи:",
     options: [
       "выделительной урографии",
@@ -3354,7 +3398,7 @@ export const rawQuestions = [
     correct_answer: "метросальпингографии",
   },
   {
-    question_number: 328,
+    question_number: 324,
     question_text:
       "Какой из методов рентгенологического исследования является ведущим при нефроптозе?",
     options: [
@@ -3366,7 +3410,7 @@ export const rawQuestions = [
     correct_answer: "ангиография",
   },
   {
-    question_number: 329,
+    question_number: 325,
     question_text:
       "Важнейшим рентгенологическим признаком травматического разрыва почки следует считать:",
     options: [
@@ -3378,32 +3422,32 @@ export const rawQuestions = [
     correct_answer: "выход контрастного вещества за пределы почки",
   },
   {
-    question_number: 330,
+    question_number: 326,
     question_text:
       "Как называется часть кости между костно-мозговым каналом и суставным ее концом?",
     options: ["эпифиз", "метафиз", "апофиз", "диафиз"],
     correct_answer: "метафиз",
   },
   {
-    question_number: 331,
+    question_number: 327,
     question_text: "Вздутие кости вызывает:",
     options: ["абсцесс Броди", "туберкулез", "киста", "остеомиелит"],
     correct_answer: "киста",
   },
   {
-    question_number: 332,
+    question_number: 328,
     question_text: "Какой перелом кости является внутрисуставным?",
     options: ["оскольчатый", "диафизарный", "метафизарный", "эпифизарный"],
     correct_answer: "эпифизарный",
   },
   {
-    question_number: 333,
+    question_number: 329,
     question_text: "Какой перелом следует считать асептическим?",
     options: ["дырчатый", "закрытый", "огнестрельный", "открытый"],
     correct_answer: "закрытый",
   },
   {
-    question_number: 334,
+    question_number: 330,
     question_text:
       "Рентгенологически костная мозоль после травмы определяется у взрослого человека на:",
     options: [
@@ -3415,7 +3459,7 @@ export const rawQuestions = [
     correct_answer: "третьей неделе",
   },
   {
-    question_number: 335,
+    question_number: 331,
     question_text: "Ранний рак желудка — это понятие:",
     options: [
       "эндоскопическое",
@@ -3426,7 +3470,7 @@ export const rawQuestions = [
     correct_answer: "эндоскопическое",
   },
   {
-    question_number: 336,
+    question_number: 332,
     question_text:
       "На высоте кровотечения из верхних отделов желудочно-кишечного тракта рентгенологическое исследование производят в:",
     options: [
@@ -3438,7 +3482,7 @@ export const rawQuestions = [
       "вертикальном положении с барием, но без компрессии пальцами",
   },
   {
-    question_number: 337,
+    question_number: 333,
     question_text:
       "При остром желудочно-кишечном кровотечении рентгенологическое исследование проводят:",
     options: [
@@ -3450,14 +3494,14 @@ export const rawQuestions = [
     correct_answer: "сразу же при поступлении пациента в клинику",
   },
   {
-    question_number: 338,
+    question_number: 334,
     question_text:
       "В нормальных условиях продолжительность пассажа головного конца бария по тонкой кишке составляет:",
     options: ["5 ч", "7 ч", "1 ч", "3 ч"],
     correct_answer: "3 ч",
   },
   {
-    question_number: 339,
+    question_number: 335,
     question_text:
       "У пожилых людей, по сравнению с молодыми, диафрагма обычно располагается:",
     options: [
@@ -3469,7 +3513,7 @@ export const rawQuestions = [
     correct_answer: "ниже",
   },
   {
-    question_number: 340,
+    question_number: 336,
     question_text:
       "При химических ожогах пищевода рубцовое сужение просвета чаще наблюдается в:",
     options: [
@@ -3481,7 +3525,7 @@ export const rawQuestions = [
     correct_answer: "местах физиологических сужений",
   },
   {
-    question_number: 341,
+    question_number: 337,
     question_text: "Наиболее частым осложнением язвы пищевода является:",
     options: [
       "малигнизация",
@@ -3492,13 +3536,13 @@ export const rawQuestions = [
     correct_answer: "рубцовое сужение пищевода",
   },
   {
-    question_number: 342,
+    question_number: 338,
     question_text: "Перфорацию пищевода чаще можно наблюдать при:",
     options: ["химическом ожоге", "склеродермии", "варикозе", "ахалазии"],
     correct_answer: "химическом ожоге",
   },
   {
-    question_number: 343,
+    question_number: 339,
     question_text: "Рак пищевода чаще всего встречается в:",
     options: [
       "абдоминальном отрезке пищевода",
@@ -3509,7 +3553,7 @@ export const rawQuestions = [
     correct_answer: "среднем отделе пищевода",
   },
   {
-    question_number: 344,
+    question_number: 340,
     question_text:
       "Плоское инородное тело (монета) в верхнем отделе пищевода располагается:",
     options: [
@@ -3520,7 +3564,7 @@ export const rawQuestions = [
     correct_answer: "во фронтальной плоскости",
   },
   {
-    question_number: 345,
+    question_number: 341,
     question_text: "В какую камеру сердца впадают легочные вены?",
     options: [
       "в правый желудочек",
@@ -3531,7 +3575,7 @@ export const rawQuestions = [
     correct_answer: "в левое предсердие",
   },
   {
-    question_number: 346,
+    question_number: 342,
     question_text: "Куда впадают верхняя и нижняя полые вены?",
     options: [
       "левое предсердие",
@@ -3542,14 +3586,14 @@ export const rawQuestions = [
     correct_answer: "правое предсердие",
   },
   {
-    question_number: 347,
+    question_number: 343,
     question_text:
       "Какая проекция является основной для оценки левого предсердия?",
     options: ["правая косая", "левая боковая", "прямая", "левая косая"],
     correct_answer: "левая боковая",
   },
   {
-    question_number: 348,
+    question_number: 344,
     question_text:
       "Основной документ, регламентирующий использование источников ионизирующего излучения:",
     options: [
@@ -3561,7 +3605,7 @@ export const rawQuestions = [
       '"Закон РБ о радиационной безопасности населения" от 05.01.1998',
   },
   {
-    question_number: 349,
+    question_number: 345,
     question_text:
       "Какие классы нормативов устанавливаются для персонала и населения?",
     options: [
@@ -3574,7 +3618,7 @@ export const rawQuestions = [
       "основные пределы доз облучения; граничные дозы и референтные уровни, пределы годового поступления, допустимые среднегодовые объемные активности, среднегодовые удельные активности и другие",
   },
   {
-    question_number: 350,
+    question_number: 346,
     question_text: "Кто из работников относится к категории персонал?",
     options: [
       "лица, которые временно работают непосредственно с источниками ионизирующего излучения",
@@ -3585,7 +3629,7 @@ export const rawQuestions = [
       "лица, работающие с источниками ионизирующего излучения или находящиеся по условиям работы в зоне их воздействия",
   },
   {
-    question_number: 351,
+    question_number: 347,
     question_text: "Основные пределы доз облучения персонала за год:",
     options: [
       "50 мЗв в год в среднем за любые последовательные 5 лет, но не более 150 мЗв в год",
@@ -3596,7 +3640,7 @@ export const rawQuestions = [
       "эффективная доза 20 мЗв в год в среднем за любые последовательные 5 лет, но не более 50 мЗв в год",
   },
   {
-    question_number: 352,
+    question_number: 348,
     question_text:
       "Пользователь ИИИ должен обеспечить средствами индивидуальной защиты:",
     options: [
@@ -3608,7 +3652,7 @@ export const rawQuestions = [
       "персонал и всех лиц, посещающих помещения или территорию, где производятся работы с ИИИ",
   },
   {
-    question_number: 353,
+    question_number: 349,
     question_text:
       "Повышенное облучение граждан, привлекаемых для ликвидации радиационной аварии может быть разрешено:",
     options: [
@@ -3620,7 +3664,7 @@ export const rawQuestions = [
       "в случае необходимости спасения людей и (или) предотвращения их облучения",
   },
   {
-    question_number: 354,
+    question_number: 350,
     question_text:
       "Повышенное облучение граждан при ликвидации или предотвращении аварии допускается:",
     options: [
@@ -3632,14 +3676,14 @@ export const rawQuestions = [
       "для мужчин старше 30 лет один раз за период их жизни при предварительном информировании о возможных дозах облучения, риске для здоровья и добровольном их согласии",
   },
   {
-    question_number: 355,
+    question_number: 351,
     question_text:
       "Результаты индивидуального дозиметрического контроля персонала должны храниться в течение:",
     options: ["50 лет", "25 лет", "5 лет"],
     correct_answer: "50 лет",
   },
   {
-    question_number: 356,
+    question_number: 352,
     question_text:
       "Какие дополнительные ограничения вводятся для женщин в возрасте до 45 лет, работающих с источниками ионизирующего излучения:",
     options: [
@@ -3651,7 +3695,7 @@ export const rawQuestions = [
       "эквивалентная доза на поверхности нижней части области живота не должна превышать 1 мЗв в месяц",
   },
   {
-    question_number: 357,
+    question_number: 353,
     question_text:
       "Радиационная безопасность пациентов и населения должна быть обеспечена путем:",
     options: [
@@ -3663,14 +3707,14 @@ export const rawQuestions = [
       "получения необходимой и полезной диагностической информации при минимально возможных уровнях облучения",
   },
   {
-    question_number: 358,
+    question_number: 354,
     question_text:
       "Значение мощности эквивалентной дозы, используемое при проектировании защиты от ионизирующего излучения помещений постоянного пребывания персонала:",
     options: ["12 мкЗв/ч", "6,0 мкЗв/ч", "10 мкЗв/ч"],
     correct_answer: "6,0 мкЗв/ч",
   },
   {
-    question_number: 359,
+    question_number: 355,
     question_text:
       "Радиационный контроль при эксплуатации рентгеновского кабинета (аппарата) должен включать:",
     options: [
@@ -3682,14 +3726,14 @@ export const rawQuestions = [
     correct_answer: "все, что указано в других вариантах ответов",
   },
   {
-    question_number: 360,
+    question_number: 356,
     question_text:
       "При проведении профилактических медицинских рентгенологических исследований практически здоровых лиц годовая эффективная доза этих лиц не должна превышать:",
     options: ["1 мЗв", "20 мЗв", "5 мЗв"],
     correct_answer: "1 мЗв",
   },
   {
-    question_number: 361,
+    question_number: 357,
     question_text:
       "Для ограничения радиационных воздействий на пациентов при проведении радиологических медицинских процедур используются принципы:",
     options: [
@@ -3701,14 +3745,14 @@ export const rawQuestions = [
       "обоснования назначения радиологических процедур, оптимизации мер защиты пациентов",
   },
   {
-    question_number: 362,
+    question_number: 358,
     question_text:
       "Лица, не относящиеся к персоналу рентгеновского кабинета, оказывающие помощь в поддержке пациентов (тяжелобольных, детей) при выполнении рентгенодиагностических процедур, не должны подвергаться облучению в дозе, превышающей:",
     options: ["5 мЗв/год", "20 мЗв/год", "1 мЗв/год"],
     correct_answer: "5 мЗв/год",
   },
   {
-    question_number: 363,
+    question_number: 359,
     question_text:
       "Медицинское облучение пациентов с целью получения диагностической информации или терапевтического эффекта проводится:",
     options: [
@@ -3720,7 +3764,7 @@ export const rawQuestions = [
       "только по назначению врача-специалиста и с согласия пациента (или его законного представителя)",
   },
   {
-    question_number: 364,
+    question_number: 360,
     question_text:
       "Произведенные в амбулаторно-поликлинических условиях рентгенологические исследования в условиях стационара:",
     options: [
@@ -3731,7 +3775,7 @@ export const rawQuestions = [
     correct_answer: "не должны дублироваться",
   },
   {
-    question_number: 365,
+    question_number: 361,
     question_text: "При радиационной аварии пользователь обязан:",
     options: [
       "обеспечить выполнение мероприятий по защите персонала и населения от радиационной аварии и ее последствий",
@@ -3742,7 +3786,7 @@ export const rawQuestions = [
       "обеспечить выполнение мероприятий по защите персонала и населения от радиационной аварии и ее последствий",
   },
   {
-    question_number: 366,
+    question_number: 362,
     question_text:
       "Для профессионального облучения учащихся в возрасте от 16 до 18 лет, которые проходят обучение в целях последующего получения работы, связанной с излучением, и для облучения учащихся в возрасте от 16 до 18 лет, которые пользуются источниками ионизирующего излучения в процессе своего обучения, устанавливаются следующие пределы доз облучения:",
     options: [
@@ -3753,7 +3797,7 @@ export const rawQuestions = [
     correct_answer: "эффективная доза 6 мЗв в год",
   },
   {
-    question_number: 367,
+    question_number: 363,
     question_text:
       'Принципы использования ИИИ в соответствии с Законом РБ "О радиационной безопасности населения РБ":',
     options: [
@@ -3765,7 +3809,7 @@ export const rawQuestions = [
     correct_answer: "все вышеперечисленные",
   },
   {
-    question_number: 368,
+    question_number: 364,
     question_text:
       "Виды обязательного дозиметрического контроля. Периодичность проведения при нормальной эксплуатации ИИИ:",
     options: [
@@ -3777,7 +3821,7 @@ export const rawQuestions = [
     correct_answer: "все вышеперечисленные",
   },
   {
-    question_number: 369,
+    question_number: 365,
     question_text: "Способы защиты от ионизирующих излучений:",
     options: [
       "защита временем и экранированием",
@@ -3787,7 +3831,7 @@ export const rawQuestions = [
     correct_answer: "все вышеперечисленное",
   },
   {
-    question_number: 370,
+    question_number: 366,
     question_text: "При радиационной аварии пользователь обязан информировать:",
     options: [
       "государственные органы, осуществляющие управление надзор и контроль в области обеспечения радиационной безопасности, а также органы местного управления и самоуправления, население территорий, на которых возможно повышенное облучение",
@@ -3798,7 +3842,7 @@ export const rawQuestions = [
       "государственные органы, осуществляющие управление надзор и контроль в области обеспечения радиационной безопасности, а также органы местного управления и самоуправления, население территорий, на которых возможно повышенное облучение",
   },
   {
-    question_number: 371,
+    question_number: 367,
     question_text: "Порядок приема на работу рентгенолаборанта:",
     options: [
       "старше 18 лет и при отсутствии медицинских противопоказаний",
@@ -3809,7 +3853,7 @@ export const rawQuestions = [
       "старше 18 лет, медицинское образование, специальная подготовка по рентгенологии, отсутствие медицинских противопоказаний",
   },
   {
-    question_number: 372,
+    question_number: 368,
     question_text:
       "Как влияет расстояние от трубки до объекта на дозу облучения:",
     options: [
@@ -3821,7 +3865,7 @@ export const rawQuestions = [
       "уменьшается в квадратической зависимости от степени увеличения расстояния",
   },
   {
-    question_number: 373,
+    question_number: 369,
     question_text:
       "К какому типу источников ионизирующего излучения относится рентгеновское излучение:",
     options: [
@@ -3832,7 +3876,7 @@ export const rawQuestions = [
     correct_answer: "к источникам генерирующего типа",
   },
   {
-    question_number: 374,
+    question_number: 370,
     question_text:
       "В каких случаях требуется дополнительный алюминиевый фильтр:",
     options: [
@@ -3843,7 +3887,7 @@ export const rawQuestions = [
     correct_answer: "во всех случаях выполнения рентгеновских снимков",
   },
   {
-    question_number: 375,
+    question_number: 371,
     question_text:
       "Влияние отсеивающего растра на дозу облучения пациента по сравнению с исследованием той же области без его применения:",
     options: [
@@ -3854,7 +3898,7 @@ export const rawQuestions = [
     correct_answer: "увеличивает дозу облучения",
   },
   {
-    question_number: 376,
+    question_number: 372,
     question_text: "Понятие о фокусах рентгеновской трубки:",
     options: [
       "микрофокус - размер оптического фокуса до 0,3x0,3 мм. Малый фокус - размер оптического фокуса от 0,4x0,4 до 1,2x1,2 мм. Большой фокус - размер фокусного пятна более 1,2x1,2 мм",
@@ -3865,7 +3909,7 @@ export const rawQuestions = [
       "микрофокус - размер оптического фокуса до 0,3x0,3 мм. Малый фокус - размер оптического фокуса от 0,4x0,4 до 1,2x1,2 мм. Большой фокус - размер фокусного пятна более 1,2x1,2 мм",
   },
   {
-    question_number: 377,
+    question_number: 373,
     question_text:
       "Контроль защитной эффективности средств радиационной защиты должна проводиться:",
     options: [
@@ -3876,7 +3920,7 @@ export const rawQuestions = [
     correct_answer: "не реже одного раза в 2 года",
   },
   {
-    question_number: 378,
+    question_number: 374,
     question_text: "Как влияет сила тока на радиационный выход:",
     options: [
       "прямо пропорционально изменению силы тока",
@@ -3886,21 +3930,21 @@ export const rawQuestions = [
     correct_answer: "прямо пропорционально изменению силы тока",
   },
   {
-    question_number: 379,
+    question_number: 375,
     question_text:
       "К какому классу радиационной опасности относятся медицинские рентгеновские установки напряжением свыше 100 Кv:",
     options: ["II классу", "I классу", "III классу"],
     correct_answer: "III классу",
   },
   {
-    question_number: 380,
+    question_number: 376,
     question_text:
       "С какого возраста выполняются профилактические исследования легких:",
     options: ["с 17 лет", "с 18 лет", "с 16 лет"],
     correct_answer: "с 17 лет",
   },
   {
-    question_number: 381,
+    question_number: 377,
     question_text:
       "Укажите какие значения являются пределом доз для персонала работающих с ИИИ:",
     options: [
@@ -3912,7 +3956,7 @@ export const rawQuestions = [
       "20 мЗв в год, не более 50 мЗв в год, при средней дозе за 5 лет не более 20 мЗв в год, не более 1 Зв за 50 лет трудовой деятельности",
   },
   {
-    question_number: 382,
+    question_number: 378,
     question_text:
       "Какой закон Республики Беларусь определяет основы правового регулирования в области обеспечения радиационной безопасности населения?",
     options: [
@@ -3924,7 +3968,7 @@ export const rawQuestions = [
       "Закон Республики Беларусь «О радиационной безопасности населения»",
   },
   {
-    question_number: 383,
+    question_number: 379,
     question_text:
       "Совпадение светового и лучевого полей центратора рентгеновской трубки не должен превышать:",
     options: [
@@ -3935,7 +3979,7 @@ export const rawQuestions = [
     correct_answer: "суммарно 2 см по всем направлениям",
   },
   {
-    question_number: 384,
+    question_number: 380,
     question_text:
       "Требования к кратности воздухообмена в процедурных рентгеновских кабинетов:",
     options: [
@@ -3946,7 +3990,7 @@ export const rawQuestions = [
     correct_answer: "4-х кратная вытяжка и 3-х кратный приток",
   },
   {
-    question_number: 385,
+    question_number: 381,
     question_text:
       "Работница, которая уведомлена о своей беременности или кормлении грудью, должна:",
     options: [
@@ -3958,7 +4002,7 @@ export const rawQuestions = [
       "изменить условия ее труда в отношении профессионального облучения, чтобы обеспечить зародышу, плоду или младенцу такой же широкий уровень защиты, какой требуется для лиц из населения",
   },
   {
-    question_number: 386,
+    question_number: 382,
     question_text:
       'Укажите правильное определение понятия "радиационная безопасность":',
     options: [
@@ -3970,7 +4014,7 @@ export const rawQuestions = [
       "состояние защищенности настоящего и будущих поколений людей от вредного воздействия ионизирующего излучения",
   },
   {
-    question_number: 387,
+    question_number: 383,
     question_text:
       "Какие ограничения по полученной дозе при выполнении рентгенологических исследований с диагностической целью?",
     options: [
@@ -3981,7 +4025,7 @@ export const rawQuestions = [
     correct_answer: "без ограничений",
   },
   {
-    question_number: 388,
+    question_number: 384,
     question_text:
       "Сроки использования проявляющих растворов при ручном фотолабораторном процессе:",
     options: [
@@ -3993,7 +4037,7 @@ export const rawQuestions = [
       "при обработке не более 1 м² пленки на 1 л раствора, но не более 3-х месяцев",
   },
   {
-    question_number: 389,
+    question_number: 385,
     question_text:
       "Кто принимает окончательное решение о виде рентгенологического исследования:",
     options: [
@@ -4004,7 +4048,7 @@ export const rawQuestions = [
     correct_answer: "врач-рентгенолог",
   },
   {
-    question_number: 390,
+    question_number: 386,
     question_text:
       "Что относится к видам ионизирующего излучения из нижеперечисленного?",
     options: [
@@ -4015,13 +4059,13 @@ export const rawQuestions = [
     correct_answer: "все вышеперечисленное",
   },
   {
-    question_number: 391,
+    question_number: 387,
     question_text: "Кем и на какой срок выдается санитарный паспорт на ИИИ:",
     options: ["на 3 года ЦГИЭ", "на 1 год ОЛБИД", "не более 3 лет ЦГИЭ"],
     correct_answer: "не более 3 лет ЦГИЭ",
   },
   {
-    question_number: 392,
+    question_number: 388,
     question_text:
       "Кем и на какой срок выдается технический паспорт на рентгеновский кабинет?",
     options: [
@@ -4032,7 +4076,7 @@ export const rawQuestions = [
     correct_answer: "на 4 года ОЛБиД с правом продления на 4 года",
   },
   {
-    question_number: 393,
+    question_number: 389,
     question_text: "Основная причина артефактов на рентгенограммах:",
     options: [
       "плохое состояние усиливающих экранов либо плохое примыкание экранов к пленке",
@@ -4043,7 +4087,7 @@ export const rawQuestions = [
       "плохое состояние усиливающих экранов либо плохое примыкание экранов к пленке",
   },
   {
-    question_number: 394,
+    question_number: 390,
     question_text: "Что считается источником ионизирующего излучения?",
     options: [
       "радиоактивное вещество или устройство, испускающее или способное испускать ионизирующее излучение сверх уровней, установленных нормативными правовыми актами, в том числе техническими нормативными правовыми актами, либо устройство, содержащее или использующее в работе радиоактивное вещество",
@@ -4052,7 +4096,7 @@ export const rawQuestions = [
       "радиоактивное вещество или устройство, испускающее или способное испускать ионизирующее излучение сверх уровней, установленных нормативными правовыми актами, в том числе техническими нормативными правовыми актами, либо устройство, содержащее или использующее в работе радиоактивное вещество",
   },
   {
-    question_number: 395,
+    question_number: 391,
     question_text:
       "Кто является пользователем источников ионизирующего излучения?",
     options: [
@@ -4064,7 +4108,7 @@ export const rawQuestions = [
       "предприятия, учреждения, организации производящие, вырабатывающие, перерабатывающие, применяющие, хранящие, транспортирующие, обезвреживающие и захоранивающие радиоактивные вещества и другие источники ионизирующего излучения",
   },
   {
-    question_number: 396,
+    question_number: 392,
     question_text: "Природа рентгеновского и гамма-излучений:",
     options: [
       "положительно заряженная бета-частица",
@@ -4074,7 +4118,7 @@ export const rawQuestions = [
     correct_answer: "поток электромагнитных волн",
   },
   {
-    question_number: 397,
+    question_number: 393,
     question_text: "Когда применяется дополнительный медный фильтр:",
     options: [
       "при выполнении снимков с использованием растра",
@@ -4085,7 +4129,7 @@ export const rawQuestions = [
       "при выполнении снимков с использованием напряжения на трубке свыше 100 Кv",
   },
   {
-    question_number: 398,
+    question_number: 394,
     question_text: "В медицинской практике могут использоваться R-аппараты:",
     options: [
       "соответствующие требованиям ГОСТ",
@@ -4095,7 +4139,7 @@ export const rawQuestions = [
     correct_answer: "зарегистрированные Минздравом Республики Беларусь",
   },
   {
-    question_number: 399,
+    question_number: 395,
     question_text:
       "Проверка совпадения светового и лучевого полей центратора должна производиться:",
     options: [
@@ -4106,7 +4150,7 @@ export const rawQuestions = [
     correct_answer: "один раз в квартал",
   },
   {
-    question_number: 400,
+    question_number: 396,
     question_text:
       'Какой источник считается "закрытым источником ионизирующего излучения"?',
     options: [
@@ -4118,7 +4162,7 @@ export const rawQuestions = [
       "источник излучения, устройство которого исключает поступление содержащихся в нем радионуклидов в окружающую среду в условиях применения и износа, на которые он рассчитан",
   },
   {
-    question_number: 401,
+    question_number: 397,
     question_text:
       "Допускается ли размещение рентгеновских кабинетов для дентальных исследований в жилых зданиях?",
     options: [
@@ -4130,7 +4174,7 @@ export const rawQuestions = [
       "допускается, если над процедурной кабинета нет жилых помещений",
   },
   {
-    question_number: 402,
+    question_number: 398,
     question_text:
       "Какие ограничения вводятся для рентгеновских кабинетов дентальных исследований при размещении в жилых зданиях?",
     options: [
@@ -4141,7 +4185,7 @@ export const rawQuestions = [
     correct_answer: "не более 40 max мин. в неделю",
   },
   {
-    question_number: 403,
+    question_number: 399,
     question_text:
       "Как влияет использование растра на дозу облучения пациента?",
     options: [
@@ -4153,7 +4197,7 @@ export const rawQuestions = [
       "увеличивает дозу облучения, т.к. требует увеличения напряжения на трубке",
   },
   {
-    question_number: 404,
+    question_number: 400,
     question_text:
       "Контроль защитной эффективности средств радиационной защиты должна проводиться:",
     options: [
@@ -4164,7 +4208,7 @@ export const rawQuestions = [
     correct_answer: "не реже одного раза в 2 года",
   },
   {
-    question_number: 405,
+    question_number: 401,
     question_text:
       "Какие принципы используются при проведении радиологических медицинских процедур для ограничения радиоактивного воздействия на пациента:",
     options: [
@@ -4176,7 +4220,7 @@ export const rawQuestions = [
       "обоснования назначения радиологических процедур, оптимизации мер защиты пациентов",
   },
   {
-    question_number: 406,
+    question_number: 402,
     question_text: "Когда необходим дополнительный алюминиевый фильтр?",
     options: [
       "при использовании отсеивающего растра",
@@ -4186,19 +4230,19 @@ export const rawQuestions = [
     correct_answer: "во всех случаях выполнения рентгеновских снимков",
   },
   {
-    question_number: 407,
+    question_number: 403,
     question_text: "В каком году было открыто рентгеновское излучение:",
     options: ["в 1895 году", "в 1812 году", "в 1905 году", "в 1923 году"],
     correct_answer: "в 1895 году",
   },
   {
-    question_number: 408,
+    question_number: 404,
     question_text: "Первый рентгеновский аппарат в России сконструировал:",
     options: ["А.Ф.Иоффе", "М.С. Овощников", "М.И. Неменов", "А.С. Попов"],
     correct_answer: "А.С. Попов",
   },
   {
-    question_number: 409,
+    question_number: 405,
     question_text:
       "Минимально допустимые площади процедурной рентгеновского кабинета общего назначения (1 рабочее место), пультовой и фотолаборатории равны:",
     options: [
@@ -4210,7 +4254,7 @@ export const rawQuestions = [
     correct_answer: "34 кв. м., 10 кв. м и 10 кв.м",
   },
   {
-    question_number: 410,
+    question_number: 406,
     question_text: "К методам лучевой диагностики не относятся:",
     options: [
       "сонография",
@@ -4221,7 +4265,7 @@ export const rawQuestions = [
     correct_answer: "термография",
   },
   {
-    question_number: 411,
+    question_number: 407,
     question_text:
       "Источником электронов для получения рентгеновских лучей в трубке служит:",
     options: [
@@ -4233,7 +4277,7 @@ export const rawQuestions = [
     correct_answer: "нить накала",
   },
   {
-    question_number: 412,
+    question_number: 408,
     question_text: "Чтобы заметить небольшие слабоконтрастные тени можно:",
     options: [
       "максимально увеличить освещённость рентгенограммы",
@@ -4243,7 +4287,7 @@ export const rawQuestions = [
     correct_answer: "использовать источник света малой яркости",
   },
   {
-    question_number: 413,
+    question_number: 409,
     question_text: "Рентгеновское излучение является:",
     options: [
       "продольным колебанием эфира",
@@ -4253,13 +4297,13 @@ export const rawQuestions = [
     correct_answer: "электромагнитным",
   },
   {
-    question_number: 414,
+    question_number: 410,
     question_text: "Размер фокусного пятна рентгеновской трубки:",
     options: ["1 на 1 мм", "диаметром 132 мм", "10 на 10 мм"],
     correct_answer: "1 на 1 мм",
   },
   {
-    question_number: 415,
+    question_number: 411,
     question_text:
       "Рентгеновский экспонометр с ионизационной камерой работает наиболее точно:",
     options: [
@@ -4270,13 +4314,13 @@ export const rawQuestions = [
     correct_answer: "при достаточно длинных экспозициях",
   },
   {
-    question_number: 416,
+    question_number: 412,
     question_text: "С ростом напряжения проникающая способность:",
     options: ["увеличивается", "не изменяется", "ослабляется"],
     correct_answer: "увеличивается",
   },
   {
-    question_number: 417,
+    question_number: 413,
     question_text: "Какой метод исследования даёт наибольшую лучевую нагрузку:",
     options: [
       "рентгеноскопия с УРИ",
@@ -4287,20 +4331,20 @@ export const rawQuestions = [
     correct_answer: "рентгеноскопия с люминесцентным экраном",
   },
   {
-    question_number: 418,
+    question_number: 414,
     question_text:
       "Предельно допустимая мощность доз облучения персонала рентгеновских кабинетов составляет:",
     options: ["0,03 МР/ч", "0,12 МР/ч", "5 МЭВ", "1,7 МР/ч"],
     correct_answer: "5 МЭВ",
   },
   {
-    question_number: 419,
+    question_number: 415,
     question_text: "Ослабление рентгеновского излучения веществом связано:",
     options: ["с комптоновским рассеянием", "с фотоэлектрическим эффектом"],
     correct_answer: "с фотоэлектрическим эффектом, с комптоновским рассеянием",
   },
   {
-    question_number: 420,
+    question_number: 416,
     question_text: "Не являются электромагнитными:",
     options: [
       "радиоволны",
@@ -4311,7 +4355,7 @@ export const rawQuestions = [
     correct_answer: "звуковые волны",
   },
   {
-    question_number: 421,
+    question_number: 417,
     question_text:
       "При увеличении расстояния фокус-объект в два раза интенсивность облучения:",
     options: [
@@ -4323,7 +4367,7 @@ export const rawQuestions = [
     correct_answer: "уменьшается в 4 раза",
   },
   {
-    question_number: 422,
+    question_number: 418,
     question_text: "Наименьшую разрешающую способность обеспечивают:",
     options: [
       "экраны для рентгеноскопии",
@@ -4334,19 +4378,19 @@ export const rawQuestions = [
     correct_answer: "экраны для рентгеноскопии",
   },
   {
-    question_number: 423,
+    question_number: 419,
     question_text: "Доза поглощения излучения измеряется в:",
     options: ["килограммах", "грэях", "беккерелях"],
     correct_answer: "грэях",
   },
   {
-    question_number: 424,
+    question_number: 420,
     question_text: "При взаимодействии с телами излучение:",
     options: ["не изменяется", "ослабляется", "усиливается"],
     correct_answer: "ослабляется",
   },
   {
-    question_number: 425,
+    question_number: 421,
     question_text:
       "Для искусственного контрастирования в рентгенологии применяются:",
     options: [
@@ -4358,7 +4402,7 @@ export const rawQuestions = [
     correct_answer: "всё перечисленное",
   },
   {
-    question_number: 426,
+    question_number: 422,
     question_text: "Использование отсеивающего растра приводит:",
     options: [
       "к уменьшению воздействия вторичного излучения и улучшению контрастности изображения",
@@ -4370,7 +4414,7 @@ export const rawQuestions = [
       "к уменьшению воздействия вторичного излучения и улучшению контрастности изображения",
   },
   {
-    question_number: 427,
+    question_number: 423,
     question_text:
       "Все следующие характеристики снимка связаны с условиями фотообработки, кроме:",
     options: [
@@ -4382,13 +4426,13 @@ export const rawQuestions = [
     correct_answer: "размера изображения",
   },
   {
-    question_number: 428,
+    question_number: 424,
     question_text: "Рентгеновскую плёнку проявляют примерно:",
     options: ["8 минут", "8 секунд", "80 секунд"],
     correct_answer: "8 минут",
   },
   {
-    question_number: 429,
+    question_number: 425,
     question_text:
       "При стандартном времени проявления фотолабораторной пленки 5-6 минут изменения температуры на 2 градуса требует изменения времени проявления:",
     options: [
@@ -4401,13 +4445,13 @@ export const rawQuestions = [
     correct_answer: "на 1 минуту",
   },
   {
-    question_number: 430,
+    question_number: 426,
     question_text: "Единица измерения мощности дозы рентгеновского излучения:",
     options: ["рад", "рентген", "грей", "рентген/мин"],
     correct_answer: "рентген/мин",
   },
   {
-    question_number: 431,
+    question_number: 427,
     question_text:
       "Малый фокус рентгеновской трубки считается размером приблизительно:",
     options: [
@@ -4420,56 +4464,56 @@ export const rawQuestions = [
     correct_answer: "1 x 1 мм",
   },
   {
-    question_number: 432,
+    question_number: 428,
     question_text: "При обрыве в цепи трубки стрелки мА метра:",
     options: ["пульсирует", "отклоняется к нулю", "зашкаливает"],
     correct_answer: "отклоняется к нулю",
   },
   {
-    question_number: 433,
+    question_number: 429,
     question_text: "Анод рентгеновской трубки является электродом:",
     options: ["отрицательным", "нейтральным", "положительным"],
     correct_answer: "положительным",
   },
   {
-    question_number: 434,
+    question_number: 430,
     question_text: "Колба рентгеновской трубки заполнена:",
     options: ["водородом", "вакуумом", "криптоном"],
     correct_answer: "вакуумом",
   },
   {
-    question_number: 435,
+    question_number: 431,
     question_text: "КПД рентгеновской трубки составляет:",
     options: ["около 20 %", "примерно 2%", "ориентировочно 49,7 %"],
     correct_answer: "примерно 2%",
   },
   {
-    question_number: 436,
+    question_number: 432,
     question_text: "При удалении от трубки в 2 раза доза снижается:",
     options: ["в 2 раза", "в 4 раза", "в 1,42 раза"],
     correct_answer: "в 4 раза",
   },
   {
-    question_number: 437,
+    question_number: 433,
     question_text: "Рентгеновская ТВ система снижает облучение:",
     options: ["в 1000 раз", "в 10 раз", "в 0,1 раза"],
     correct_answer: "в 10 раз",
   },
   {
-    question_number: 438,
+    question_number: 434,
     question_text: "Рентгеновское излучение возникает при торможении:",
     options: ["электронов", "нейтронов", "протонов"],
     correct_answer: "электронов",
   },
   {
-    question_number: 439,
+    question_number: 435,
     question_text:
       "Отрицательное влияние рассеянного излучения можно снизить при помощи:",
     options: ["усиливающих экранов", "тубуса", "повышения напряжения"],
     correct_answer: "тубуса",
   },
   {
-    question_number: 440,
+    question_number: 436,
     question_text: "Субтракция теней при обзорной рентгенографии:",
     options: [
       "затрудняет выявление патологических изменений",
@@ -4479,7 +4523,7 @@ export const rawQuestions = [
     correct_answer: "затрудняет выявление патологических изменений",
   },
   {
-    question_number: 441,
+    question_number: 437,
     question_text:
       "Геометрическая нерезкость рентгенограммы зависит от всего перечисленного, кроме:",
     options: [
@@ -4491,13 +4535,13 @@ export const rawQuestions = [
     correct_answer: "движения объекта во время съёмки",
   },
   {
-    question_number: 442,
+    question_number: 438,
     question_text: "Длина волны рентгеновского излучения:",
     options: ["около 0,000001 м", "около 0,000000001 м", "около 0,001 м"],
     correct_answer: "около 0,000000001 м",
   },
   {
-    question_number: 443,
+    question_number: 439,
     question_text:
       "Уменьшение размеров изображения при рентгенографии по сравнению с размерами объекта может быть достигнуто:",
     options: [
@@ -4508,77 +4552,77 @@ export const rawQuestions = [
     correct_answer: "увеличением расстояния фокус-плёнка (или фокус-экран)",
   },
   {
-    question_number: 444,
+    question_number: 440,
     question_text:
       "Куда проецируются интересующие анатомические области при рентгенографии:",
     options: ["в середину между центром кассеты и краем", "в центр кассеты"],
     correct_answer: "в центр кассеты",
   },
   {
-    question_number: 445,
+    question_number: 441,
     question_text: "При увеличении фокуса размер изображения:",
     options: ["увеличивается", "уменьшается", "не изменяется"],
     correct_answer: "не изменяется",
   },
   {
-    question_number: 446,
+    question_number: 442,
     question_text: "Лучевая болезнь начинается при тотальной дозе:",
     options: ["1 бэр", "300 бэр", "10 бэр"],
     correct_answer: "300 бэр",
   },
   {
-    question_number: 447,
+    question_number: 443,
     question_text: "При исследовании костей свода черепа применяются укладки:",
     options: ["аксиальные", "прямые, боковые", "полуаксиальные"],
     correct_answer: "прямые, боковые",
   },
   {
-    question_number: 448,
+    question_number: 444,
     question_text: "При исследовании основания черепа применяются укладки:",
     options: ["аксиальные", "контактные, касательные", "прямые, боковые"],
     correct_answer: "аксиальные",
   },
   {
-    question_number: 449,
+    question_number: 445,
     question_text: "К спец.укладкам при исследовании височной кости относится:",
     options: ["по Резе", "полуаксиальные", "по Шюллеру"],
     correct_answer: "по Шюллеру",
   },
   {
-    question_number: 450,
+    question_number: 446,
     question_text: "К спец.укладкам при исследовании височной кости относится:",
     options: ["полуаксиальные", "по Резе", "по Стенверсу"],
     correct_answer: "по Стенверсу",
   },
   {
-    question_number: 451,
+    question_number: 447,
     question_text: "К спец.укладкам при исследовании височной кости относится:",
     options: ["аксиальные", "по Резе", "по Майеру"],
     correct_answer: "по Майеру",
   },
   {
-    question_number: 452,
+    question_number: 448,
     question_text:
       "Прицельные рентгеновские снимки черепа производятся на расстоянии фокус рентгеновской трубки-кассеты, не превышающем:",
     options: ["80-100 см", "45-50 см"],
     correct_answer: "45-50 см",
   },
   {
-    question_number: 453,
+    question_number: 449,
     question_text:
       "Обзорные рентгеновские снимки черепа производятся на расстоянии фокус рентгеновской трубки-кассеты, не превышающем:",
     options: ["80-100 см", "130-140 см"],
     correct_answer: "80-100 см",
   },
   {
-    question_number: 454,
+    question_number: 450,
     question_text:
       "При укладке черепа в боковой проекции, чтобы не «срезалась» затылочная кость, кассету сдвигают от центра в сторону затылка на:",
     options: ["3-3,5 см", "1-1,5 см", "2-2,5 см"],
     correct_answer: "2-2,5 см",
   },
   {
-    question_number: 455,
+    question_number: 451,
     question_text:
       "При укладке черепа в прямой проекции центральный луч направлен к доске стола:",
     options: [
@@ -4589,7 +4633,7 @@ export const rawQuestions = [
     correct_answer: "перпендикулярно",
   },
   {
-    question_number: 456,
+    question_number: 452,
     question_text:
       "При укладке черепа височной кости по Шюллеру верхушка сосцевидного отростка:",
     options: [
@@ -4600,21 +4644,21 @@ export const rawQuestions = [
     correct_answer: "располагается на 1,5 см ниже",
   },
   {
-    question_number: 457,
+    question_number: 453,
     question_text:
       "Под каким углом необходимо прислонить голову к столу глазом, щекой и носом при укладке головы для снимка правой височной кости в косой проекции по Стенверсу:",
     options: ["45 градусов", "15 градусов", "30 градусов"],
     correct_answer: "45 градусов",
   },
   {
-    question_number: 458,
+    question_number: 454,
     question_text:
       "Под каким углом направлен центральный луч при укладке головы для снимка нижней челюсти:",
     options: ["15 градусов", "25 градусов", "5 градусов"],
     correct_answer: "25 градусов",
   },
   {
-    question_number: 459,
+    question_number: 455,
     question_text: "Плоскость физической горизонтали:",
     options: [
       "располагается вдоль сагиттального шва сверху вниз, спереди назад и делит голову на правую и левую",
@@ -4624,14 +4668,14 @@ export const rawQuestions = [
       "проходит по нижним краям обоих глазниц и верхним краям обоих наружных отверстий слухового прохода",
   },
   {
-    question_number: 460,
+    question_number: 456,
     question_text:
       "Ориентиры, по которым определяется уровень расположения суставных щелей на конечностях:",
     options: ["подкожные", "кожные", "костные"],
     correct_answer: "кожные, костные",
   },
   {
-    question_number: 461,
+    question_number: 457,
     question_text: "С чего начинается первоначальная оценка поражения кости:",
     options: [
       "с цифровой рентгенографии",
@@ -4641,14 +4685,14 @@ export const rawQuestions = [
     correct_answer: "с рентгенографии",
   },
   {
-    question_number: 462,
+    question_number: 458,
     question_text:
       "Доминирующая методика в визуализации молочных желез у женщин старше 50 лет:",
     options: ["маммография", "ультразвук", "магниторезонансная томография"],
     correct_answer: "маммография",
   },
   {
-    question_number: 463,
+    question_number: 459,
     question_text: "Рентгенография грудной клетки в прямой проекции делается:",
     options: [
       "при глубоком выдохе и направлении лучей спереди назад",
@@ -4657,7 +4701,7 @@ export const rawQuestions = [
     correct_answer: "при глубоком вдохе и направлении лучей сзади наперед",
   },
   {
-    question_number: 464,
+    question_number: 460,
     question_text:
       "При наличии какой патологии не показано проведение бронхографии:",
     options: [
@@ -4668,20 +4712,20 @@ export const rawQuestions = [
     correct_answer: "наличие пневмоторакса",
   },
   {
-    question_number: 465,
+    question_number: 461,
     question_text: "Лёгочная ангиография используется для визуализации:",
     options: ["пневмоторакса", "бронхоэктазов", "лёгочных артерий и вен"],
     correct_answer: "лёгочных артерий и вен",
   },
   {
-    question_number: 466,
+    question_number: 462,
     question_text:
       "Преимуществом какой методики является возможность получать послойные изображения в коронарных и сагиттальных проекциях:",
     options: ["томография", "рентгенография", "магниторезонансная томография"],
     correct_answer: "магниторезонансная томография",
   },
   {
-    question_number: 467,
+    question_number: 463,
     question_text:
       "Из-за проекционных неудобств вне ротового способа применяется только при рентгенографии:",
     options: [
@@ -4693,7 +4737,7 @@ export const rawQuestions = [
     correct_answer: "задних зубов нижней челюсти 8765/5678",
   },
   {
-    question_number: 468,
+    question_number: 464,
     question_text:
       "Для получения раздельного изображения корней коренных зубов центральный луч должен иметь направление:",
     options: [
@@ -4704,7 +4748,7 @@ export const rawQuestions = [
     correct_answer: "косое (спереди назад или сзади наперёд)",
   },
   {
-    question_number: 469,
+    question_number: 465,
     question_text: "На чём основана методика ортопантомографии:",
     options: [
       "количество томографических срезов",
@@ -4714,7 +4758,7 @@ export const rawQuestions = [
     correct_answer: "по типу диорамного полотна картины художника",
   },
   {
-    question_number: 470,
+    question_number: 466,
     question_text:
       "Одним из обязательных условий рентгенографии позвоночника является:",
     options: [
@@ -4726,7 +4770,7 @@ export const rawQuestions = [
       "раздельное изображение тел позвоночника и межпозвоночных щелей",
   },
   {
-    question_number: 471,
+    question_number: 467,
     question_text:
       "Сагиттальная плоскость головы к плоскости стола при укладке больного для бокового снимка шейных позвонков:",
     options: [
@@ -4737,14 +4781,14 @@ export const rawQuestions = [
     correct_answer: "расположена перпендикулярно",
   },
   {
-    question_number: 472,
+    question_number: 468,
     question_text:
       "Угол направления центрального луча при укладке больного для прямого заднего снимка шейных позвонков:",
     options: ["10-15 градусов", "15-25 градусов", "0-50 градусов"],
     correct_answer: "10-15 градусов",
   },
   {
-    question_number: 473,
+    question_number: 469,
     question_text:
       "При укладке пациента для грудного отдела позвоночника в прямой проекции центральный луч направлен:",
     options: [
@@ -4755,21 +4799,21 @@ export const rawQuestions = [
     correct_answer: "на середину грудины",
   },
   {
-    question_number: 474,
+    question_number: 470,
     question_text:
       "При укладке пациента для прямого заднего снимка поясничных позвонков, центральный луч направлен перпендикулярно к плоскости стола выше гребешковой линии:",
     options: ["на 2,5 см", "на 1-1,5 см", "1,52 см"],
     correct_answer: "на 1-1,5 см",
   },
   {
-    question_number: 475,
+    question_number: 471,
     question_text:
       "Укладка пациента для заднего прямого снимка тазобедренного сустава в обычной проекции, нога вытянута ротирована внутрь на:",
     options: ["5-10 градусов", "15-20 градусов", "10-15 градусов"],
     correct_answer: "10-15 градусов",
   },
   {
-    question_number: 476,
+    question_number: 472,
     question_text:
       "При укладке пациента для боковых снимков поясничных позвонков, центральный луч направлен перпендикулярно к плоскости стола на:",
     options: [
@@ -4780,7 +4824,7 @@ export const rawQuestions = [
     correct_answer: "проекцию III позвонка L",
   },
   {
-    question_number: 477,
+    question_number: 473,
     question_text:
       "При укладке пациента для аксиального снимка надколенника, центральный луч направлен:",
     options: [
@@ -4791,7 +4835,7 @@ export const rawQuestions = [
     correct_answer: "отвесно вниз через надколенник к кассете",
   },
   {
-    question_number: 478,
+    question_number: 474,
     question_text:
       "Центральный луч при укладке плечевого сустава для аксиальных снимков в ключично-подмышечном направлении:",
     options: [
@@ -4803,7 +4847,7 @@ export const rawQuestions = [
       "направляется вертикально на проекцию суставной щели в центр кассеты",
   },
   {
-    question_number: 479,
+    question_number: 475,
     question_text:
       "Для всех пациентов с внезапными и тяжёлыми нейрорадиологическими нарушениями, даёт ответ на важнейший вопрос о целесообразности хирургического вмешательства:",
     options: [
@@ -4814,7 +4858,7 @@ export const rawQuestions = [
     correct_answer: "компьютерная томография",
   },
   {
-    question_number: 480,
+    question_number: 476,
     question_text:
       "Метод, дающий лучшее мягкотканое разрешение при обследовании области турецкого седла, черепа, воздуха в пазухах, зубных пломб:",
     options: [
@@ -4825,20 +4869,20 @@ export const rawQuestions = [
     correct_answer: "магниторезонансная томография",
   },
   {
-    question_number: 481,
+    question_number: 477,
     question_text: "В пирамиде височной кости располагаются:",
     options: ["органы обоняния и осязания", "органы слуха и равновесия"],
     correct_answer: "органы слуха и равновесия",
   },
   {
-    question_number: 482,
+    question_number: 478,
     question_text:
       "Какой метод даёт ценную дополнительную информацию и исключительно полезен для идентификации переломов, особенно невральных дуг и оскольчатых переломов, при которых можно предполагать наличие осколков кости в позвоночном канале:",
     options: ["рентгеноскопия", "компьютерная томография", "рентгенография"],
     correct_answer: "компьютерная томография",
   },
   {
-    question_number: 483,
+    question_number: 479,
     question_text:
       "Какая методика позволяет установить отсутствие травматической грыжи диска или эпидуральной гематомы:",
     options: [
@@ -4849,26 +4893,26 @@ export const rawQuestions = [
     correct_answer: "магниторезонансная томография",
   },
   {
-    question_number: 484,
+    question_number: 480,
     question_text:
       "Сравнительная толщина спинного мозга в районе шейного отдела относительно грудного отдела:",
     options: ["несколько тоньше", "несколько толще", "одинаковая толщина"],
     correct_answer: "несколько толще",
   },
   {
-    question_number: 485,
+    question_number: 481,
     question_text: "Эффекты воздействия на организм ионизирующего излучения:",
     options: ["генетический", "соматический"],
     correct_answer: "соматический, генетический",
   },
   {
-    question_number: 486,
+    question_number: 482,
     question_text: "Виды действия ионизирующего излучения на организм:",
     options: ["прямое", "косвенное"],
     correct_answer: "прямое, косвенное",
   },
   {
-    question_number: 487,
+    question_number: 483,
     question_text: "Частое облучение в малых дозах:",
     options: [
       "оказывает большее воздействие, чем одноразовое в больших дозах",
@@ -4878,7 +4922,7 @@ export const rawQuestions = [
     correct_answer: "накапливается",
   },
   {
-    question_number: 488,
+    question_number: 484,
     question_text: "Одноразовое облучение в большой дозе:",
     options: [
       "вызывает менее глубокие последствия, чем частое прерывистое",
@@ -4889,7 +4933,7 @@ export const rawQuestions = [
       "вызывает более глубокие последствия, чем частое прерывистое",
   },
   {
-    question_number: 489,
+    question_number: 485,
     question_text: "Различные органы и ткани живого организма имеют:",
     options: [
       "одинаковую чувствительность к облучению",
@@ -4898,7 +4942,7 @@ export const rawQuestions = [
     correct_answer: "разную чувствительность к облучению",
   },
   {
-    question_number: 490,
+    question_number: 486,
     question_text: "Радиочувствительность организма:",
     options: [
       "не зависит от его возраста",
@@ -4908,7 +4952,7 @@ export const rawQuestions = [
     correct_answer: "зависит от его возраста",
   },
   {
-    question_number: 491,
+    question_number: 487,
     question_text: "Влияние на организма времени облучения:",
     options: [
       "чем больше время воздействия, тем больше последствия",
@@ -4917,7 +4961,7 @@ export const rawQuestions = [
     correct_answer: "чем больше время воздействия, тем больше последствия",
   },
   {
-    question_number: 492,
+    question_number: 488,
     question_text: "Влияние на организм мощности дозы облучения:",
     options: [
       "зависит от индивидуальной чувствительности",
@@ -4926,7 +4970,7 @@ export const rawQuestions = [
     correct_answer: "чем больше мощность дозы, тем больше последствия",
   },
   {
-    question_number: 493,
+    question_number: 489,
     question_text: "Острая лучевая болезнь возникает:",
     options: [
       "в результате однократного короткого воздействия ионизирующего излучения в дозе более 100 рад",
@@ -4937,7 +4981,7 @@ export const rawQuestions = [
       "в результате однократного короткого воздействия ионизирующего излучения в дозе более 100 рад",
   },
   {
-    question_number: 494,
+    question_number: 490,
     question_text: "Хроническая лучевая болезнь возникает:",
     options: [
       "в результате частого длительного воздействия больших доз ионизирующего излучения",
@@ -4948,21 +4992,21 @@ export const rawQuestions = [
       "в результате частого длительного воздействия малых доз ионизирующего излучения",
   },
   {
-    question_number: 495,
+    question_number: 491,
     question_text:
       "При какой дозе облучения возникает хроническая лучевая болезнь:",
     options: ["более 500 рад", "более 100 рад", "более 200 рад"],
     correct_answer: "более 100 рад",
   },
   {
-    question_number: 496,
+    question_number: 492,
     question_text:
       "Среднегодовая эффективная эквивалентная доза человека при профилактическом обследовании не должна превышать:",
     options: ["0,1 мЗв в год", "10 мЗв в год", "1 мЗв в год"],
     correct_answer: "1 мЗв в год",
   },
   {
-    question_number: 497,
+    question_number: 493,
     question_text: "Рентгенологические исследования беременным женщинам:",
     options: [
       "разрешены",
@@ -4973,13 +5017,13 @@ export const rawQuestions = [
       "разрешены по медицинским показаниям с максимально возможной защитой плода",
   },
   {
-    question_number: 498,
+    question_number: 494,
     question_text: "Основные принципы защиты от рентгеновского излучения:",
     options: ["расстояние", "время", "экранирование"],
     correct_answer: "время, экранирование, расстояние",
   },
   {
-    question_number: 499,
+    question_number: 495,
     question_text: "К категории А относятся:",
     options: [
       "персонал, постоянно или временно работающий с источниками ионизирующего излучения",
@@ -4991,7 +5035,7 @@ export const rawQuestions = [
       "персонал, постоянно или временно работающий с источниками ионизирующего излучения",
   },
   {
-    question_number: 500,
+    question_number: 496,
     question_text: "К категории Б относятся:",
     options: [
       "персонал постоянно или временно работающий с источниками ионизирующего излучения",
@@ -5002,7 +5046,7 @@ export const rawQuestions = [
       "лица, по условиям проживания или размещения рабочих мест, находящиеся в зоне ионизирующего излучения",
   },
   {
-    question_number: 501,
+    question_number: 497,
     question_text: "Использование индивидуальных средств защиты у пациентов:",
     options: [
       "не зависит от возраста и вида обследования",
@@ -5012,7 +5056,7 @@ export const rawQuestions = [
     correct_answer: "не зависит от возраста и вида обследования",
   },
   {
-    question_number: 502,
+    question_number: 498,
     question_text:
       "Медицинские осмотры персонала рентгеновских кабинетов должны проводиться:",
     options: [
@@ -5024,14 +5068,14 @@ export const rawQuestions = [
     correct_answer: "1 раз в год",
   },
   {
-    question_number: 503,
+    question_number: 499,
     question_text:
       "Плановый инструктаж персонала по технике безопасности должен проводиться не реже:",
     options: ["1 раз в год", "1 раз в квартал", "1 раз в 6 месяцев"],
     correct_answer: "1 раз в 6 месяцев",
   },
   {
-    question_number: 504,
+    question_number: 500,
     question_text:
       "Беременные женщины освобождаются от работы с источниками ионизирующего излучения:",
     options: [
@@ -5043,7 +5087,7 @@ export const rawQuestions = [
       "на весь срок с момента медицинского подтверждения наличия беременности",
   },
   {
-    question_number: 505,
+    question_number: 501,
     question_text:
       "Индивидуальный дозиметрический контроль персонала должен проводиться:",
     options: [
@@ -5054,7 +5098,7 @@ export const rawQuestions = [
     correct_answer: "постоянно с контролем 1 раз в квартал",
   },
   {
-    question_number: 506,
+    question_number: 502,
     question_text: "Меры по снижению дозовых нагрузок на пациента:",
     options: [
       "проведения комплекса мер по радиационной защите пациента",
@@ -5064,13 +5108,13 @@ export const rawQuestions = [
       "проведение рентгенологических обследований строго по медицинским показаниям, проведения комплекса мер по радиационной защите пациента",
   },
   {
-    question_number: 507,
+    question_number: 503,
     question_text: "Наиболее чувствительная к облучению ткань:",
     options: ["красный костный мозг", "половые клетки", "лимфоидная"],
     correct_answer: "лимфоидная",
   },
   {
-    question_number: 508,
+    question_number: 504,
     question_text:
       "Предельно допустимая эффективная доза облучения для персонала группы А:",
     options: [
@@ -5081,20 +5125,20 @@ export const rawQuestions = [
     correct_answer: "не более 0,05 Зв в год",
   },
   {
-    question_number: 509,
+    question_number: 505,
     question_text:
       "Рентгенолаборанту обслуживать два или более аппаратов в разных кабинетах:",
     options: ["можно при общей комнате управления", "нельзя", "можно"],
     correct_answer: "нельзя",
   },
   {
-    question_number: 510,
+    question_number: 506,
     question_text: "Для защиты от рентгеновского излучения используется:",
     options: ["алюминий", "свинец", "железо"],
     correct_answer: "свинец",
   },
   {
-    question_number: 511,
+    question_number: 507,
     question_text:
       "Первоочередные действия рентгенолаборанта при несчастном случае или неисправности оборудования:",
     options: [
@@ -5106,13 +5150,13 @@ export const rawQuestions = [
       "отключить главный сетевой рубильник и поставить в известность об этом зав. отделением",
   },
   {
-    question_number: 512,
+    question_number: 508,
     question_text: "Лицевая часть черепа состоит:",
     options: ["из 16 костей", "из 20 костей", "из 15 костей"],
     correct_answer: "из 15 костей",
   },
   {
-    question_number: 513,
+    question_number: 509,
     question_text: "Основная пазуха расположена:",
     options: [
       "в клиновидной кости черепа",
@@ -5122,19 +5166,19 @@ export const rawQuestions = [
     correct_answer: "в клиновидной кости черепа",
   },
   {
-    question_number: 514,
+    question_number: 510,
     question_text: "Орган слуха и равновесия расположен в:",
     options: ["лобной кости", "теменной кости", "височной кости"],
     correct_answer: "височной кости",
   },
   {
-    question_number: 515,
+    question_number: 511,
     question_text: "Гайморовы пазухи расположены:",
     options: ["в верхнечелюстной кости", "в решетчатой кости"],
     correct_answer: "в верхнечелюстной кости",
   },
   {
-    question_number: 516,
+    question_number: 512,
     question_text: "Свод черепа образуют:",
     options: [
       "лобная кость",
@@ -5146,7 +5190,7 @@ export const rawQuestions = [
       "лобная кость, теменная кость, затылочная кость, височная кость",
   },
   {
-    question_number: 517,
+    question_number: 513,
     question_text: "Стандартные проекции для рентгенографии черепа включают:",
     options: [
       "задняя прямая – боковая",
@@ -5156,19 +5200,19 @@ export const rawQuestions = [
     correct_answer: "прямая носолобная – боковая проекция",
   },
   {
-    question_number: 518,
+    question_number: 514,
     question_text: "Кости носа лучше видны на:",
     options: ["боковой проекции", "задней проекции", "прямой проекции"],
     correct_answer: "боковой проекции",
   },
   {
-    question_number: 519,
+    question_number: 515,
     question_text: "Турецкое седло расположено в:",
     options: ["височной кости", "клиновидной кости", "теменной кости"],
     correct_answer: "клиновидной кости",
   },
   {
-    question_number: 520,
+    question_number: 516,
     question_text: "Для рентгенографии турецкого седла применяется:",
     options: [
       "боковая прицельная проекция",
@@ -5178,7 +5222,7 @@ export const rawQuestions = [
     correct_answer: "боковая прицельная проекция",
   },
   {
-    question_number: 521,
+    question_number: 517,
     question_text:
       "Правильность рентгенограмм трубчатых костей предполагает выполнение рентгенограмм в:",
     options: [
@@ -5189,7 +5233,7 @@ export const rawQuestions = [
     correct_answer: "в 2-х взаимно-перпендикулярных проекциях",
   },
   {
-    question_number: 522,
+    question_number: 518,
     question_text: "Клиновидная (основная) пазуха лучше видна на:",
     options: [
       "задней прямой рентгенограмме",
@@ -5199,33 +5243,33 @@ export const rawQuestions = [
     correct_answer: "боковой рентгенограмме",
   },
   {
-    question_number: 523,
+    question_number: 519,
     question_text:
       "Выполнение рентгенограмм длинных трубчатых костей предполагает:",
     options: ["захват сустава обязателен", "захват сустава необязателен"],
     correct_answer: "захват сустава обязателен",
   },
   {
-    question_number: 524,
+    question_number: 520,
     question_text: "Кости таза относятся к:",
     options: ["плоским костям", "трубчатым костям", "губчатым костям"],
     correct_answer: "плоским костям",
   },
   {
-    question_number: 525,
+    question_number: 521,
     question_text: "Кости запястья относятся к:",
     options: ["плоским костям", "губчатым костям", "трубчатым костям"],
     correct_answer: "губчатым костям",
   },
   {
-    question_number: 526,
+    question_number: 522,
     question_text:
       "При подозрении на перелом скуловой кости необходимо выполнение рентгенограммы в:",
     options: ["боковой проекции", "тангенциальной проекции", "прямой проекции"],
     correct_answer: "тангенциальной проекции",
   },
   {
-    question_number: 527,
+    question_number: 523,
     question_text: "Гайморография – это:",
     options: [
       "контрастное исследование гайморовых пазух",
@@ -5234,27 +5278,27 @@ export const rawQuestions = [
     correct_answer: "контрастное исследование гайморовых пазух",
   },
   {
-    question_number: 528,
+    question_number: 524,
     question_text:
       "Рентгенограмма стопы в боковой проекции под нагрузкой выполняется с целью выявления:",
     options: ["плоскостопия", "переломов", "артрозов"],
     correct_answer: "плоскостопия",
   },
   {
-    question_number: 529,
+    question_number: 525,
     question_text:
       "На качественно выполненной рентгенограмме костей должно быть:",
     options: ["кость, контуры мягких тканей", "только кость"],
     correct_answer: "кость, контуры мягких тканей",
   },
   {
-    question_number: 530,
+    question_number: 526,
     question_text: "Для рентгенографии нижней челюсти применяют:",
     options: ["боковую проекцию", "косую проекцию", "прямую проекцию"],
     correct_answer: "косую проекцию",
   },
   {
-    question_number: 531,
+    question_number: 527,
     question_text: "Боковой снимок коленного сустава выполняется в положении:",
     options: [
       "дозированного сгибания",
@@ -5264,32 +5308,32 @@ export const rawQuestions = [
     correct_answer: "дозированного сгибания",
   },
   {
-    question_number: 532,
+    question_number: 528,
     question_text: "Рентгенография тазобедренного сустава выполняется:",
     options: ["без решетки", "с решеткой"],
     correct_answer: "с решеткой",
   },
   {
-    question_number: 533,
+    question_number: 529,
     question_text: "Рентгенограмму пяточной кости можно выполнять в:",
     options: ["прямой проекции", "аксиальной проекции", "боковой проекции"],
     correct_answer: "боковой проекции, аксиальной проекции",
   },
   {
-    question_number: 534,
+    question_number: 530,
     question_text: "Рентгенография бедренной кости выполняется:",
     options: ["в прямой проекции", "в двух проекциях", "в трех проекциях"],
     correct_answer: "в двух проекциях",
   },
   {
-    question_number: 535,
+    question_number: 531,
     question_text:
       "Рентгенография крестца и копчика предусматривает предварительную подготовку (клизму):",
     options: ["да", "нет"],
     correct_answer: "да",
   },
   {
-    question_number: 536,
+    question_number: 532,
     question_text: "Проведение маммографии наиболее информативно:",
     options: [
       "с 5 по 12 день менструального цикла",
@@ -5299,7 +5343,7 @@ export const rawQuestions = [
     correct_answer: "с 5 по 12 день менструального цикла",
   },
   {
-    question_number: 537,
+    question_number: 533,
     question_text: "Дуктография это:",
     options: [
       "снимок молочной железы с увеличением",
@@ -5309,7 +5353,7 @@ export const rawQuestions = [
     correct_answer: "контрастирование протоков молочной железы",
   },
   {
-    question_number: 538,
+    question_number: 534,
     question_text: "Кратность проведения маммографии по диспансеризации:",
     options: [
       "один раз в два года",
@@ -5320,13 +5364,13 @@ export const rawQuestions = [
     correct_answer: "один раз в два года",
   },
   {
-    question_number: 539,
+    question_number: 535,
     question_text: "Стандартное количество снимков при проведении маммографии:",
     options: ["четыре", "два", "шесть"],
     correct_answer: "четыре",
   },
   {
-    question_number: 540,
+    question_number: 536,
     question_text:
       "Рентгенографию молочных желёз при массовых проверочных исследованиях необходимо производить:",
     options: [
@@ -5337,14 +5381,14 @@ export const rawQuestions = [
     correct_answer: "в прямой и косой проекции",
   },
   {
-    question_number: 541,
+    question_number: 537,
     question_text:
       "Абсолютным показанием к дуктографии являются выделения из соска:",
     options: ["серозные и кровянистые", "молозивные", "любого характера"],
     correct_answer: "серозные и кровянистые",
   },
   {
-    question_number: 542,
+    question_number: 538,
     question_text:
       "Рентгенография с прямым увеличением изображения применяется:",
     options: [
@@ -5355,13 +5399,13 @@ export const rawQuestions = [
     correct_answer: "для уточнения наличия микрокальцинатов",
   },
   {
-    question_number: 543,
+    question_number: 539,
     question_text: "Имеет лечебный эффект:",
     options: ["термография", "маммография", "дуктография"],
     correct_answer: "дуктография",
   },
   {
-    question_number: 544,
+    question_number: 540,
     question_text: "Применение рентгеновской маммографии:",
     options: [
       "ограничено у молодых женщин с плотной структурой молочных желёз",
@@ -5372,7 +5416,7 @@ export const rawQuestions = [
       "ограничено у молодых женщин с плотной структурой молочных желёз",
   },
   {
-    question_number: 545,
+    question_number: 541,
     question_text: "Проведение дуктографии:",
     options: [
       "противопоказано при остром воспалительном процессе",
@@ -5382,7 +5426,7 @@ export const rawQuestions = [
     correct_answer: "противопоказано при остром воспалительном процессе",
   },
   {
-    question_number: 546,
+    question_number: 542,
     question_text: "Обязательное условие при проведении маммографии:",
     options: [
       "вертикальное положение больной",
@@ -5392,13 +5436,13 @@ export const rawQuestions = [
     correct_answer: "компрессия",
   },
   {
-    question_number: 547,
+    question_number: 543,
     question_text: "Используемое анодное напряжение при маммографии:",
     options: ["80–100 кв", "100–120 кв", "20–50 кв"],
     correct_answer: "20–50 кв",
   },
   {
-    question_number: 548,
+    question_number: 544,
     question_text: "Зеленочувствительную Р-пленку следует проявлять при:",
     options: [
       "синем светофильтре",
@@ -5408,7 +5452,7 @@ export const rawQuestions = [
     correct_answer: "красном светофильтре",
   },
   {
-    question_number: 549,
+    question_number: 545,
     question_text: "Признаками истощения проявителя являются:",
     options: [
       "увеличение времени проявления в два раза",
@@ -5419,7 +5463,7 @@ export const rawQuestions = [
       "коричневая окраска раствора, увеличение времени проявления в два раза, уменьшение объема раствора",
   },
   {
-    question_number: 550,
+    question_number: 546,
     question_text: "Раствор фиксажа подлежит регенерации:",
     options: [
       "один раз в неделю",
@@ -5429,7 +5473,7 @@ export const rawQuestions = [
     correct_answer: "при увеличении продолжительности фиксирования в 2 раза",
   },
   {
-    question_number: 551,
+    question_number: 547,
     question_text: "Повышенную вуаль на рентгенограмме могут вызывать:",
     options: [
       "повышенная мощность ламп в неактиничных фонарях",
@@ -5440,7 +5484,7 @@ export const rawQuestions = [
       "слишком длительное проявление, некачественная пленка, повышенная мощность ламп в неактиничных фонарях",
   },
   {
-    question_number: 552,
+    question_number: 548,
     question_text: "Проявление рентгенограмм «на глаз» позволяет:",
     options: [
       "полностью использовать проявитель",
@@ -5450,14 +5494,14 @@ export const rawQuestions = [
     correct_answer: "исправить погрешность в установке режимов",
   },
   {
-    question_number: 553,
+    question_number: 549,
     question_text:
       "Основное фиксирующее вещество, без которого невозможен процесс фиксации изображения:",
     options: ["борная кислота", "гипосульфит натрия", "метол"],
     correct_answer: "гипосульфит натрия",
   },
   {
-    question_number: 554,
+    question_number: 550,
     question_text:
       "Основные проявляющие химические вещества, наиболее часто встречающиеся в проявителях:",
     options: [
@@ -5468,26 +5512,26 @@ export const rawQuestions = [
     correct_answer: "метол и гидрохинон",
   },
   {
-    question_number: 555,
+    question_number: 551,
     question_text: "В состав фотографической эмульсии Р-пленки входит:",
     options: ["нитрат натрия", "йодид железа", "бромид серебра"],
     correct_answer: "бромид серебра",
   },
   {
-    question_number: 556,
+    question_number: 552,
     question_text:
       "В качестве противовуалирующего вещества в растворе проявителя чаще используется:",
     options: ["нашатырный спирт", "бромистый калий", "сода"],
     correct_answer: "бромистый калий",
   },
   {
-    question_number: 557,
+    question_number: 553,
     question_text: "На обзорной Р-гр мочевыводящих путей тень мочевого пузыря:",
     options: ["выявляется всегда", "выявляется редко", "никогда не выявляется"],
     correct_answer: "выявляется редко",
   },
   {
-    question_number: 558,
+    question_number: 554,
     question_text: "Для выявления нефроптоза необходимо использовать:",
     options: [
       "рентгенографию в вертикальном положении больного",
@@ -5498,7 +5542,7 @@ export const rawQuestions = [
       "рентгенографию в вертикальном положении больного, исследование в положении Тренделенбурга",
   },
   {
-    question_number: 559,
+    question_number: 555,
     question_text: "На интенсивность изображения мочевых путей влияют:",
     options: [
       "сопутствующие заболевания",
@@ -5508,7 +5552,7 @@ export const rawQuestions = [
     correct_answer: "количество и концентрация контрастного вещества",
   },
   {
-    question_number: 560,
+    question_number: 556,
     question_text:
       "На качестве изображения мочевых путей при экскреторной урографии отражается:",
     options: [
@@ -5519,7 +5563,7 @@ export const rawQuestions = [
     correct_answer: "пожилой возраст",
   },
   {
-    question_number: 561,
+    question_number: 557,
     question_text: "Почки у здорового человека находятся на уровне:",
     options: [
       "8-10 грудных позвонков",
@@ -5529,13 +5573,13 @@ export const rawQuestions = [
     correct_answer: "12 грудного и 1-2 поясничного позвонков",
   },
   {
-    question_number: 562,
+    question_number: 558,
     question_text: "В норме верхний полюс правой почки расположен:",
     options: ["выше левой", "ниже левой", "на одном уровне"],
     correct_answer: "ниже левой",
   },
   {
-    question_number: 563,
+    question_number: 559,
     question_text: "Противопоказанием к экскреторной урографии является:",
     options: [
       "повышенная чувствительность к йодсодержащим контрастам",
@@ -5545,7 +5589,7 @@ export const rawQuestions = [
     correct_answer: "повышенная чувствительность к йодсодержащим контрастам",
   },
   {
-    question_number: 564,
+    question_number: 560,
     question_text: "Полицистография это:",
     options: [
       "введение в мочевой пузырь водорастворимого контраста и воздуха",
@@ -5556,7 +5600,7 @@ export const rawQuestions = [
       "производство нескольких снимков мочевого пузыря на одной Р-пленке с предварительным введением в него контрастного вещества",
   },
   {
-    question_number: 565,
+    question_number: 561,
     question_text:
       "При выполнении экскреторной урографии используется контраст:",
     options: [
@@ -5567,7 +5611,7 @@ export const rawQuestions = [
     correct_answer: "водорастворимые йодсодержащие препараты",
   },
   {
-    question_number: 566,
+    question_number: 562,
     question_text: "Обзорная урография перед экскреторной урографией:",
     options: [
       "при подозрении на нефроптоз",
@@ -5577,14 +5621,14 @@ export const rawQuestions = [
     correct_answer: "обязательна для всех",
   },
   {
-    question_number: 567,
+    question_number: 563,
     question_text:
       "При выраженной аэроколии (метеоризме) при проведении внутривенной урографии рекомендуется:",
     options: ["компрессия", "положение Тренделенбурга", "зонография"],
     correct_answer: "зонография",
   },
   {
-    question_number: 568,
+    question_number: 564,
     question_text: "Серебросодержащие отходы включают:",
     options: [
       "Р-пленка в любом виде",
@@ -5595,14 +5639,14 @@ export const rawQuestions = [
       "отработанный фиксаж, 1-ая промывная вода после фиксирования, Р-пленка в любом виде",
   },
   {
-    question_number: 569,
+    question_number: 565,
     question_text:
       "В качестве ускоряющего вещества в растворе проявителя применяются:",
     options: ["спирты", "щелочи", "кислоты"],
     correct_answer: "щелочи",
   },
   {
-    question_number: 570,
+    question_number: 566,
     question_text: "Сохраняющее вещество в проявителе:",
     options: [
       "окисляет раствор проявителя",
@@ -5612,7 +5656,7 @@ export const rawQuestions = [
     correct_answer: "предохраняет проявитель от окисления кислородом воздуха",
   },
   {
-    question_number: 571,
+    question_number: 567,
     question_text: "Проявляющее вещество в растворе проявителя:",
     options: [
       "восстанавливает бромистое серебро в металлическое",
@@ -5622,7 +5666,7 @@ export const rawQuestions = [
     correct_answer: "восстанавливает бромистое серебро в металлическое",
   },
   {
-    question_number: 572,
+    question_number: 568,
     question_text: "Фиксаж:",
     options: [
       "делает изображение более ярким",
@@ -5632,14 +5676,14 @@ export const rawQuestions = [
     correct_answer: "делает проявленное изображение светостойким",
   },
   {
-    question_number: 573,
+    question_number: 569,
     question_text:
       "Для профилактики аспирации рвотных масс больному следует придать положение:",
     options: ["на животе", "на спине", "на боку", "полусидячее"],
     correct_answer: "на боку",
   },
   {
-    question_number: 574,
+    question_number: 570,
     question_text: "Стремительно развивающийся шок:",
     options: [
       "анафилактический",
@@ -5650,7 +5694,7 @@ export const rawQuestions = [
     correct_answer: "анафилактический",
   },
   {
-    question_number: 575,
+    question_number: 571,
     question_text: "Права пациента:",
     options: [
       "на получение информации о состоянии своего здоровья",
@@ -5664,7 +5708,7 @@ export const rawQuestions = [
       "на выбор врача и ЛПУ, на получение информации о своих правах и обязанностях, на получение информации о состоянии своего здоровья, на отказ от медицинского вмешательства",
   },
   {
-    question_number: 576,
+    question_number: 572,
     question_text: "Наказания, относящиеся к дисциплинарной ответственности:",
     options: [
       "строгий выговор",
@@ -5676,7 +5720,7 @@ export const rawQuestions = [
     correct_answer: "замечание, выговор, увольнение",
   },
   {
-    question_number: 577,
+    question_number: 573,
     question_text:
       "Предельная доза лучевой нагрузки для персонала р/кабинета в год:",
     options: [
@@ -5688,7 +5732,7 @@ export const rawQuestions = [
     correct_answer: "20 мЗв (2 бэр)",
   },
   {
-    question_number: 578,
+    question_number: 574,
     question_text:
       "Как часто проводится профилактический ремонт аппаратуры и генеральная уборка в рентгеновском кабинете?",
     options: [
@@ -5700,33 +5744,33 @@ export const rawQuestions = [
     correct_answer: "не менее 1 раз в месяц",
   },
   {
-    question_number: 579,
+    question_number: 575,
     question_text:
       "Срок хранения рентгенограмм при отсутствии патологии должен быть:",
     options: ["2 года", "1 год", "0,5 года", "5 лет"],
     correct_answer: "5 лет",
   },
   {
-    question_number: 580,
+    question_number: 576,
     question_text: "Норма времени для проведения коронарографии составляет:",
     options: ["60 мин", "120 мин", "90 мин", "30 мин"],
     correct_answer: "90 мин",
   },
   {
-    question_number: 581,
+    question_number: 577,
     question_text:
       "При благоприятной эпидемиологической ситуации по туберкулезу флюорографию разрешается проводить:",
     options: ["с 16 лет", "с 12 лет", "с 15 лет", "с 17 лет"],
     correct_answer: "с 17 лет",
   },
   {
-    question_number: 582,
+    question_number: 578,
     question_text: "Какова площадь 1 погонного метра пленки?",
     options: ["3,5 м2", "0,035 м2", "35 м2", "0,35 м2"],
     correct_answer: "0,035 м2",
   },
   {
-    question_number: 583,
+    question_number: 579,
     question_text:
       "Соответствие рентгеновского кабинета действующим нормативам определяет:",
     options: [
@@ -5738,7 +5782,7 @@ export const rawQuestions = [
     correct_answer: "технический паспорт, санитарный паспорт",
   },
   {
-    question_number: 584,
+    question_number: 580,
     question_text:
       "Что чаще всего приводит к браку рентгеновского изображения?",
     options: [
@@ -5750,14 +5794,14 @@ export const rawQuestions = [
     correct_answer: "контактная нерезкость",
   },
   {
-    question_number: 585,
+    question_number: 581,
     question_text:
       "Какая проекция наиболее целесообразна для определения уменьшения средней доли легкого?",
     options: ["прямая", "косая", "лордотическая", "боковая"],
     correct_answer: "боковая",
   },
   {
-    question_number: 586,
+    question_number: 582,
     question_text:
       "Наиболее характерная локализация центрального рака легкого:",
     options: [
@@ -5769,7 +5813,7 @@ export const rawQuestions = [
     correct_answer: "корень легкого и прикорневая зона",
   },
   {
-    question_number: 587,
+    question_number: 583,
     question_text: "Из перечисленных отделов кишечника не имеет брыжейки:",
     options: [
       "тощая кишка",
@@ -5780,7 +5824,7 @@ export const rawQuestions = [
     correct_answer: "двенадцатиперстная кишка",
   },
   {
-    question_number: 588,
+    question_number: 584,
     question_text:
       "Какая методика является наиболее информативной при рентгенологическом исследовании билиарной системы при желчно-каменной болезни:",
     options: [
@@ -5792,13 +5836,13 @@ export const rawQuestions = [
     correct_answer: "внутривенная холецистохолангиография",
   },
   {
-    question_number: 589,
+    question_number: 585,
     question_text: "Внутрисуставной перелом - это?",
     options: ["оскольчатый", "эпифизарный", "метафизарный", "диафизарный"],
     correct_answer: "эпифизарный",
   },
   {
-    question_number: 590,
+    question_number: 586,
     question_text:
       "Когда рентгенологически определяется костная мозоль после травмы:",
     options: [
@@ -5810,7 +5854,7 @@ export const rawQuestions = [
     correct_answer: "третьей неделе",
   },
   {
-    question_number: 591,
+    question_number: 587,
     question_text:
       "В какой плоскости располагается плоское инородное тело (монета) в верхнем отделе пищевода:",
     options: [
@@ -5821,7 +5865,7 @@ export const rawQuestions = [
     correct_answer: "во фронтальной плоскости",
   },
   {
-    question_number: 592,
+    question_number: 588,
     question_text:
       "Когда может быть разрешено повышенное облучение граждан, привлекаемых для ликвидации радиационной аварии:",
     options: [
@@ -5833,7 +5877,7 @@ export const rawQuestions = [
       "в случае необходимости спасения людей и (или) предотвращения их облучения",
   },
   {
-    question_number: 593,
+    question_number: 589,
     question_text:
       "Каким путем должна быть обеспечена радиационная безопасность пациентов и населения:",
     options: [
