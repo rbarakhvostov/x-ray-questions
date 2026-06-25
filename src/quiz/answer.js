@@ -1,14 +1,6 @@
 import { normalize } from "../utils/normalize.js";
 
-export function getCorrectAnswers(question) {
-  const normalizedOptions = question.options.map(normalize);
-  const parts = question.correct_answer.split(",").map((part) => normalize(part));
-  const matchingParts = parts.filter((part) => normalizedOptions.includes(part));
-
-  return matchingParts.length > 0
-    ? matchingParts
-    : [normalize(question.correct_answer)];
-}
+export const getCorrectAnswers = (question) => question.correct_answer.map(normalize);
 
 export function isAnswerCorrect(question, selectedOptions) {
   const correctAnswers = getCorrectAnswers(question);
@@ -20,6 +12,4 @@ export function isAnswerCorrect(question, selectedOptions) {
   );
 }
 
-export function isMultipleChoice(question) {
-  return getCorrectAnswers(question).length > 1;
-}
+export const isMultipleChoice = (question) => getCorrectAnswers(question).length > 1;
