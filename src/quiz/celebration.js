@@ -1,49 +1,49 @@
-import { state } from "../state/quizState.js";
+import { state } from '../state/quizState.js';
 
 const CELEBRATION_DURATION_MS = 3100;
 
 const CELEBRATIONS = [
   {
     streakMod: 100,
-    className: "celebration-bigheart",
-    emoji: "🥳🥳🥳",
-    text: "Ты профи!!!",
+    className: 'celebration-bigheart',
+    emoji: '🥳🥳🥳',
+    text: 'Ты профи!!!',
   },
   {
     streakMod: 50,
-    className: "celebration-bigheart",
-    emoji: "❤️‍🔥❤️‍🔥❤️‍🔥",
-    text: "Люблю тебя!!!",
+    className: 'celebration-bigheart',
+    emoji: '❤️‍🔥❤️‍🔥❤️‍🔥',
+    text: 'Люблю тебя!!!',
   },
   {
     streakMod: 25,
-    className: "celebration-brain",
-    emoji: "🧠🧠🧠",
-    text: "Мегамозг!!!",
+    className: 'celebration-brain',
+    emoji: '🧠🧠🧠',
+    text: 'Мегамозг!!!',
   },
   {
     streakMod: 20,
-    className: "celebration-flowers",
-    emoji: "🌷🌻🌹",
-    text: "Вау. Супeр!",
+    className: 'celebration-flowers',
+    emoji: '🌷🌻🌹',
+    text: 'Вау. Супeр!',
   },
   {
     streakMod: 15,
-    className: "celebration-fire",
-    emoji: "🔥🔥🔥",
-    text: "Ну ты и голова!",
+    className: 'celebration-fire',
+    emoji: '🔥🔥🔥',
+    text: 'Ну ты и голова!',
   },
   {
     streakMod: 10,
-    className: "celebration-salute",
-    emoji: "🎉🎊🥳",
-    text: "Ты умничка!!!",
+    className: 'celebration-salute',
+    emoji: '🎉🎊🥳',
+    text: 'Ты умничка!!!',
   },
   {
     streakMod: 5,
-    className: "celebration-heart",
-    emoji: "❤️",
-    text: "Молодец!",
+    className: 'celebration-heart',
+    emoji: '❤️',
+    text: 'Молодец!',
   },
 ];
 
@@ -57,17 +57,15 @@ function buildCelebrationHtml(config) {
 export function triggerCelebration(isCorrect) {
   if (!isCorrect) return;
 
-  document.querySelector(".celebration")?.remove();
+  document.querySelector('.celebration')?.remove();
 
-  const config = CELEBRATIONS.find(
-    (item) => state.correctStreak % item.streakMod === 0,
-  );
+  const config = CELEBRATIONS.find((item) => state.correctStreak % item.streakMod === 0);
   if (!config) return;
 
-  const outer = document.createElement("div");
-  outer.className = "celebration";
+  const outer = document.createElement('div');
+  outer.className = 'celebration';
 
-  const inner = document.createElement("div");
+  const inner = document.createElement('div');
   inner.className = `celebration-inner ${config.className}`;
   inner.innerHTML = buildCelebrationHtml(config);
 

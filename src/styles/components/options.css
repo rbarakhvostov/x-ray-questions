@@ -75,7 +75,7 @@
 }
 
 .option.selected .option-indicator::after {
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   background: white;
@@ -98,7 +98,7 @@
 }
 
 .option.correct .option-indicator::after {
-  content: "✓";
+  content: '✓';
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -115,7 +115,7 @@
 }
 
 .option.incorrect .option-indicator::after {
-  content: "✕";
+  content: '✕';
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -132,7 +132,7 @@
 }
 
 .option.missed .option-indicator::after {
-  content: "!";
+  content: '!';
   color: white;
   font-size: 12px;
   font-weight: bold;

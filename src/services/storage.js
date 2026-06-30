@@ -1,6 +1,6 @@
-import { state } from "../state/quizState.js";
+import { state } from '../state/quizState.js';
 
-const STORAGE_KEY = "radiologyQuizState";
+const STORAGE_KEY = 'radiologyQuizState';
 
 export function saveState() {
   localStorage.setItem(
@@ -12,7 +12,7 @@ export function saveState() {
       wrongCount: state.wrongCount,
       answeredIndices: [...state.answeredIndices],
       correctStreak: state.correctStreak,
-    }),
+    })
   );
 }
 
