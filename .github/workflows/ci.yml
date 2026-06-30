@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
@@ -27,6 +27,9 @@ jobs:
 
       - name: Run CSS linter
         run: npm run lint:css
+
+      - name: Check formatting
+        run: npm run format:check
 
       - name: Build
         run: npm run build
