@@ -1,8 +1,15 @@
-import { state } from '../state/quizState.js';
+import { state } from '../state/quizState.ts';
 
 const CELEBRATION_DURATION_MS = 3100;
 
-const CELEBRATIONS = [
+interface CelebrationConfig {
+  streakMod: number;
+  className: string;
+  emoji: string;
+  text: string;
+}
+
+const CELEBRATIONS: CelebrationConfig[] = [
   {
     streakMod: 100,
     className: 'celebration-bigheart',
@@ -47,14 +54,14 @@ const CELEBRATIONS = [
   },
 ];
 
-function buildCelebrationHtml(config) {
+function buildCelebrationHtml(config: CelebrationConfig) {
   return `
     <span class="celebration-emoji">${config.emoji}</span>
     <span class="celebration-text">${config.text}</span>
   `;
 }
 
-export function triggerCelebration(isCorrect) {
+export function triggerCelebration(isCorrect: boolean) {
   if (!isCorrect) return;
 
   document.querySelector('.celebration')?.remove();

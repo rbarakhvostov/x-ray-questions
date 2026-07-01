@@ -21,6 +21,8 @@ export default [
         document: 'readonly',
         localStorage: 'readonly',
         setTimeout: 'readonly',
+        HTMLElement: 'readonly',
+        HTMLButtonElement: 'readonly',
       },
     },
     plugins: {

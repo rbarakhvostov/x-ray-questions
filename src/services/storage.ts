@@ -1,4 +1,4 @@
-import { state } from '../state/quizState.js';
+import { state } from '../state/quizState.ts';
 
 const STORAGE_KEY = 'radiologyQuizState';
 

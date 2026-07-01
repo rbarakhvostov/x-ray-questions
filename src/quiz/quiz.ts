@@ -1,22 +1,22 @@
-import { rawQuestions } from '../data/questions.js';
-import { state } from '../state/quizState.js';
-import { shuffleArray } from '../utils/shuffle.js';
-import { saveState, loadState, clearState } from '../services/storage.js';
-import { els } from './dom.js';
-import { triggerCelebration } from './celebration.js';
-import { getCorrectAnswers, isAnswerCorrect, isMultipleChoice } from './answer.js';
-import { normalize } from '../utils/normalize.js';
+import { rawQuestions } from '../data/questions.ts';
+import { state } from '../state/quizState.ts';
+import { shuffleArray } from '../utils/shuffle.ts';
+import { saveState, loadState, clearState } from '../services/storage.ts';
+import { els } from './dom.ts';
+import { triggerCelebration } from './celebration.ts';
+import { getCorrectAnswers, isAnswerCorrect, isMultipleChoice, Question } from './answer.ts';
+import { normalize } from '../utils/normalize.ts';
 
 function updateStats() {
-  els.currentQ.textContent = state.currentIndex + 1;
-  els.totalQ.textContent = state.questions.length;
-  els.scoreCorrect.textContent = state.correctCount;
-  els.scoreWrong.textContent = state.wrongCount;
+  els.currentQ.textContent = String(state.currentIndex + 1);
+  els.totalQ.textContent = String(state.questions.length);
+  els.scoreCorrect.textContent = String(state.correctCount);
+  els.scoreWrong.textContent = String(state.wrongCount);
   const progress = (state.currentIndex / state.questions.length) * 100;
   els.progressBar.style.width = `${progress}%`;
 }
 
-function handleOptionClick(element, text, multiple) {
+function handleOptionClick(element: HTMLElement, text: string, multiple: boolean) {
   if (state.isAnswered) return;
 
   if (multiple) {
@@ -41,7 +41,7 @@ function renderQuestion() {
   const multiple = isMultipleChoice(question);
 
   els.questionCard.style.animation = 'none';
-  els.questionCard.offsetHeight; // eslint-disable-line @typescript-eslint/no-unused-expressions
+  void els.questionCard.offsetHeight;
   els.questionCard.style.animation = 'slideUp 0.4s ease-out';
 
   els.qNumber.textContent = `Вопрос ${question.question_number}`;
@@ -92,7 +92,7 @@ function checkAnswer() {
   document.querySelectorAll('.option').forEach((el) => {
     el.classList.remove('selected');
     el.classList.add('disabled');
-    const optionText = normalize(el.querySelector('div:last-child').textContent);
+    const optionText = normalize(el.querySelector('div:last-child')?.textContent || '');
     const isCorrectOption = correctAnswers.includes(optionText);
     const isUserSelected = userAnswers.includes(optionText);
 
@@ -147,7 +147,7 @@ function showResults() {
   }
 }
 
-function prepareQuestions(shuffle) {
+function prepareQuestions(shuffle: boolean): Question[] {
   const source = shuffle ? shuffleArray(rawQuestions) : [...rawQuestions];
   return source.map((question) => ({
     ...question,
