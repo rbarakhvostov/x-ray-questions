@@ -18,6 +18,7 @@ export function saveState() {
 
 export function loadState() {
   const saved = localStorage.getItem(STORAGE_KEY);
+
   if (!saved) return false;
 
   const parsed = JSON.parse(saved);
@@ -27,6 +28,7 @@ export function loadState() {
   state.wrongCount = parsed.wrongCount;
   state.answeredIndices = new Set(parsed.answeredIndices || []);
   state.correctStreak = parsed.correctStreak || 0;
+
   return true;
 }
 
