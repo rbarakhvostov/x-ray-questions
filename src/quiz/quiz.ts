@@ -113,6 +113,7 @@ function checkAnswer() {
 
 function nextQuestion() {
   state.currentIndex++;
+
   if (state.currentIndex < state.questions.length) {
     renderQuestion();
     updateStats();
@@ -176,6 +177,7 @@ export function initQuiz(shuffle = false) {
 
     if (state.currentIndex >= state.questions.length) {
       showResults();
+
       return;
     }
   }

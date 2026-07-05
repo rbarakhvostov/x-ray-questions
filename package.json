@@ -20,13 +20,15 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "npm run typecheck"
+      "bash -c 'npm run typecheck'"
     ],
     "*.{js,jsx,ts,tsx}": [
       "npm run lint",
       "npm run format:check"
     ],
-    "*.css": "npm run lint:css:fix"
+    "*.css": [
+      "npm run lint:css:fix"
+    ]
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
