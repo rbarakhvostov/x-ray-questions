@@ -32,7 +32,7 @@ jobs:
         run: npm run format:check
 
       - name: Run CSS linter
-        run: npm run lint:css
+        run: npm run lint:css:check
 
       - name: Build
         run: npm run build

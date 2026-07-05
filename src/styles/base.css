@@ -7,7 +7,7 @@
 
 body {
   font-family:
-    'Inter',
+    Inter,
     system-ui,
     -apple-system,
     sans-serif;
@@ -24,7 +24,7 @@ body {
   display: none !important;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   body {
     padding: 12px;
   }

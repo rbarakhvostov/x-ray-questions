@@ -12,22 +12,23 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --fix",
+    "lint:staged": "eslint --fix",
     "format": "prettier --write src",
+    "format:staged": "prettier --write",
     "format:check": "prettier --check src",
-    "lint:css": "stylelint src/**/*.css",
-    "lint:css:fix": "stylelint src/**/*.css --fix",
+    "lint:css": "stylelint src/**/*.css --fix",
+    "lint:css:staged": "stylelint --fix",
+    "lint:css:check": "stylelint src/**/*.css",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint:staged",
+      "npm run format:staged",
       "bash -c 'npm run typecheck'"
     ],
-    "*.{js,jsx,ts,tsx}": [
-      "npm run lint",
-      "npm run format:check"
-    ],
     "*.css": [
-      "npm run lint:css:fix"
+      "npm run lint:css:staged"
     ]
   },
   "devDependencies": {
