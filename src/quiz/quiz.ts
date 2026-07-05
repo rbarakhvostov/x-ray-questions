@@ -149,10 +149,16 @@ function showResults() {
 
 function prepareQuestions(shuffle: boolean): Question[] {
   const source = shuffle ? shuffleArray(rawQuestions) : [...rawQuestions];
+
   return source.map((question) => ({
     ...question,
     options: shuffleArray(question.options),
   }));
+}
+
+function restartQuiz(shuffle = false) {
+  clearState();
+  initQuiz(shuffle);
 }
 
 export function initQuiz(shuffle = false) {
@@ -185,11 +191,6 @@ export function initQuiz(shuffle = false) {
   updateStats();
   renderQuestion();
   saveState();
-}
-
-export function restartQuiz(shuffle = false) {
-  clearState();
-  initQuiz(shuffle);
 }
 
 export function bindQuizEvents() {

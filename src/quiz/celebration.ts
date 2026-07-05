@@ -1,6 +1,6 @@
 import { state } from '../state/quizState.ts';
 
-const CELEBRATION_DURATION_MS = 3100;
+const CELEBRATION_DURATION_MS = 3000;
 
 interface CelebrationConfig {
   streakMod: number;
@@ -67,6 +67,7 @@ export function triggerCelebration(isCorrect: boolean) {
   document.querySelector('.celebration')?.remove();
 
   const config = CELEBRATIONS.find((item) => state.correctStreak % item.streakMod === 0);
+
   if (!config) return;
 
   const outer = document.createElement('div');
