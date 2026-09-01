@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>Рентгенография</title>
+    <title>Выберите тест</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -11,11 +11,20 @@
   </head>
   <body>
     <div class="app-container">
-      <div class="header">
+      <div id="test-select-area">
+        <div class="card select-screen">
+          <h1 class="select-title">Выберите тест</h1>
+          <p class="select-subtitle">Прогресс каждого теста сохраняется отдельно</p>
+          <div class="select-list" id="test-select-list"></div>
+        </div>
+      </div>
+
+      <div class="header hidden" id="quiz-header">
+        <div class="test-title" id="test-title"></div>
         <div class="stats-row">
           <div class="stat-item">
             Вопрос: <span id="current-q">1</span> /
-            <span id="total-q">589</span>
+            <span id="total-q">0</span>
           </div>
           <div class="stat-item">
             Верно: <span class="stat-correct" id="score-correct">0</span> | Ошибок:
@@ -27,7 +36,7 @@
         </div>
       </div>
 
-      <div id="quiz-area">
+      <div id="quiz-area" class="hidden">
         <div class="card" id="question-card">
           <div class="question-meta">
             <div class="q-number" id="q-number">Вопрос 1</div>
@@ -50,10 +59,12 @@
         <div class="actions results-actions">
           <button class="btn btn-primary" id="restart-results-btn">Начать заново</button>
           <button class="btn btn-secondary" id="shuffle-results-btn">Перемешать вопросы</button>
+          <button class="btn btn-secondary" id="results-back-btn">К тестам</button>
         </div>
       </div>
 
-      <div class="global-actions">
+      <div class="global-actions hidden" id="global-actions">
+        <button class="btn btn-secondary" id="back-to-tests-btn">К тестам</button>
         <button class="btn btn-secondary" id="global-restart-btn">Начать сначала</button>
         <button class="btn btn-secondary" id="global-shuffle-btn">Перемешать вопросы</button>
       </div>

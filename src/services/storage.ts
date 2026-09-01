@@ -1,10 +1,17 @@
+import { TestId } from '../data/tests.ts';
 import { state } from '../state/quizState.ts';
 
-const STORAGE_KEY = 'radiologyQuizState';
+const LEGACY_STORAGE_KEY = 'radiologyQuizState';
+
+function storageKey(testId: TestId) {
+  return `quizState:${testId}`;
+}
 
 export function saveState() {
+  if (!state.testId) return;
+
   localStorage.setItem(
-    STORAGE_KEY,
+    storageKey(state.testId),
     JSON.stringify({
       questions: state.questions,
       currentIndex: state.currentIndex,
@@ -16,12 +23,15 @@ export function saveState() {
   );
 }
 
-export function loadState() {
-  const saved = localStorage.getItem(STORAGE_KEY);
+export function loadState(testId: TestId) {
+  const saved =
+    localStorage.getItem(storageKey(testId)) ??
+    (testId === 'radiology' ? localStorage.getItem(LEGACY_STORAGE_KEY) : null);
 
   if (!saved) return false;
 
   const parsed = JSON.parse(saved);
+  state.testId = testId;
   state.questions = parsed.questions;
   state.currentIndex = parsed.currentIndex;
   state.correctCount = parsed.correctCount;
@@ -32,6 +42,10 @@ export function loadState() {
   return true;
 }
 
-export function clearState() {
-  localStorage.removeItem(STORAGE_KEY);
+export function clearState(testId: TestId = state.testId ?? 'radiology') {
+  localStorage.removeItem(storageKey(testId));
+
+  if (testId === 'radiology') {
+    localStorage.removeItem(LEGACY_STORAGE_KEY);
+  }
 }

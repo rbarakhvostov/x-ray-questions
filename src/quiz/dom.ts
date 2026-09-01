@@ -1,4 +1,8 @@
 export const els = {
+  testSelectArea: document.getElementById('test-select-area')! as HTMLElement,
+  testSelectList: document.getElementById('test-select-list')! as HTMLElement,
+  quizHeader: document.getElementById('quiz-header')! as HTMLElement,
+  testTitle: document.getElementById('test-title')! as HTMLElement,
   currentQ: document.getElementById('current-q')! as HTMLElement,
   totalQ: document.getElementById('total-q')! as HTMLElement,
   scoreCorrect: document.getElementById('score-correct')! as HTMLElement,
@@ -14,9 +18,12 @@ export const els = {
   resultsArea: document.getElementById('results-area')! as HTMLElement,
   finalScore: document.getElementById('final-score')! as HTMLElement,
   finalMessage: document.getElementById('final-message')! as HTMLElement,
+  globalActions: document.getElementById('global-actions')! as HTMLElement,
   globalShuffleBtn: document.getElementById('global-shuffle-btn')! as HTMLElement,
   restartBtn: document.getElementById('global-restart-btn')! as HTMLElement,
+  backToTestsBtn: document.getElementById('back-to-tests-btn')! as HTMLElement,
   questionCard: document.getElementById('question-card')! as HTMLElement,
   restartResultsBtn: document.getElementById('restart-results-btn')! as HTMLElement,
   shuffleResultsBtn: document.getElementById('shuffle-results-btn')! as HTMLElement,
+  resultsBackBtn: document.getElementById('results-back-btn')! as HTMLElement,
 };

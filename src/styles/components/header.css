@@ -8,6 +8,12 @@
   gap: 12px;
 }
 
+.test-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
 .stats-row {
   display: flex;
   justify-content: space-between;

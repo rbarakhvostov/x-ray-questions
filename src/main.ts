@@ -1,5 +1,5 @@
 import './styles/main.css';
-import { bindQuizEvents, initQuiz } from './quiz/quiz.ts';
+import { bindQuizEvents, showTestSelect } from './quiz/quiz.ts';
 
 bindQuizEvents();
-initQuiz();
+showTestSelect();

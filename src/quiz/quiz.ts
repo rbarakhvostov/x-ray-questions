@@ -1,11 +1,18 @@
-import { rawQuestions } from '../data/questions.ts';
-import { state } from '../state/quizState.ts';
-import { shuffleArray } from '../utils/shuffle.ts';
+import { formatQuestionCount, getPlayableCount, TestId, testList, tests } from '../data/tests.ts';
 import { saveState, loadState, clearState } from '../services/storage.ts';
-import { els } from './dom.ts';
-import { triggerCelebration } from './celebration.ts';
-import { getCorrectAnswers, isAnswerCorrect, isMultipleChoice, Question } from './answer.ts';
+import { resetState, state } from '../state/quizState.ts';
+import { shuffleArray } from '../utils/shuffle.ts';
 import { normalize } from '../utils/normalize.ts';
+import {
+  getCorrectAnswers,
+  hasCorrectAnswer,
+  isAnswerCorrect,
+  isMultipleChoice,
+  PlayableQuestion,
+  Question,
+} from './answer.ts';
+import { triggerCelebration } from './celebration.ts';
+import { els } from './dom.ts';
 
 function updateStats() {
   els.currentQ.textContent = String(state.currentIndex + 1);
@@ -127,10 +134,19 @@ function nextQuestion() {
   }
 }
 
+function showQuizChrome() {
+  const test = state.testId ? tests[state.testId] : null;
+
+  document.title = test?.title ?? 'Выберите тест';
+  els.testTitle.textContent = test?.title ?? '';
+  els.testSelectArea.classList.add('hidden');
+  els.quizHeader.classList.remove('hidden');
+  els.globalActions.classList.remove('hidden');
+}
+
 function showResults() {
+  showQuizChrome();
   els.quizArea.classList.add('hidden');
-  els.globalShuffleBtn.classList.add('hidden');
-  els.restartBtn.classList.add('hidden');
   els.resultsArea.classList.remove('hidden');
 
   const total = state.questions.length;
@@ -148,8 +164,9 @@ function showResults() {
   }
 }
 
-function prepareQuestions(shuffle: boolean): Question[] {
-  const source = shuffle ? shuffleArray(rawQuestions) : [...rawQuestions];
+function prepareQuestions(sourceQuestions: Question[], shuffle: boolean): PlayableQuestion[] {
+  const playable = sourceQuestions.filter(hasCorrectAnswer);
+  const source = shuffle ? shuffleArray(playable) : [...playable];
 
   return source.map((question) => ({
     ...question,
@@ -158,13 +175,56 @@ function prepareQuestions(shuffle: boolean): Question[] {
 }
 
 function restartQuiz(shuffle = false) {
-  clearState();
+  if (!state.testId) return;
+
+  clearState(state.testId);
   initQuiz(shuffle);
 }
 
+export function showTestSelect() {
+  resetState();
+  document.title = 'Выберите тест';
+  els.testSelectArea.classList.remove('hidden');
+  els.quizHeader.classList.add('hidden');
+  els.quizArea.classList.add('hidden');
+  els.resultsArea.classList.add('hidden');
+  els.globalActions.classList.add('hidden');
+  renderTestSelect();
+}
+
+function renderTestSelect() {
+  els.testSelectList.innerHTML = '';
+
+  testList.forEach((test) => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'select-test-btn';
+    button.innerHTML = `
+      <span class="select-test-title">${test.title}</span>
+      <span class="select-test-meta">${formatQuestionCount(getPlayableCount(test))}</span>
+    `;
+    button.addEventListener('click', () => startTest(test.id));
+    els.testSelectList.appendChild(button);
+  });
+}
+
+export function startTest(testId: TestId) {
+  state.testId = testId;
+  initQuiz();
+}
+
 export function initQuiz(shuffle = false) {
-  if (!loadState() || shuffle) {
-    state.questions = prepareQuestions(shuffle);
+  if (!state.testId) {
+    showTestSelect();
+
+    return;
+  }
+
+  const bank = tests[state.testId];
+
+  if (!loadState(state.testId) || shuffle) {
+    state.testId = bank.id;
+    state.questions = prepareQuestions(bank.questions, shuffle);
     state.currentIndex = 0;
     state.correctCount = 0;
     state.wrongCount = 0;
@@ -185,10 +245,9 @@ export function initQuiz(shuffle = false) {
   state.selectedOptions = [];
   state.isAnswered = false;
 
+  showQuizChrome();
   els.quizArea.classList.remove('hidden');
   els.resultsArea.classList.add('hidden');
-  els.globalShuffleBtn.classList.remove('hidden');
-  els.restartBtn.classList.remove('hidden');
 
   updateStats();
   renderQuestion();
@@ -202,4 +261,6 @@ export function bindQuizEvents() {
   els.globalShuffleBtn.addEventListener('click', () => restartQuiz(true));
   els.restartResultsBtn.addEventListener('click', () => restartQuiz(false));
   els.shuffleResultsBtn.addEventListener('click', () => restartQuiz(true));
+  els.backToTestsBtn.addEventListener('click', showTestSelect);
+  els.resultsBackBtn.addEventListener('click', showTestSelect);
 }

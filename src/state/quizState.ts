@@ -1,7 +1,9 @@
-import { Question } from '../quiz/answer.ts';
+import { TestId } from '../data/tests.ts';
+import { PlayableQuestion } from '../quiz/answer.ts';
 
 export interface QuizState {
-  questions: Question[];
+  testId: TestId | null;
+  questions: PlayableQuestion[];
   currentIndex: number;
   correctCount: number;
   wrongCount: number;
@@ -13,6 +15,7 @@ export interface QuizState {
 
 export function createInitialState(): QuizState {
   return {
+    testId: null,
     questions: [],
     currentIndex: 0,
     correctCount: 0,
