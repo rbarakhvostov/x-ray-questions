@@ -1,16 +1,10 @@
 import { formatQuestionCount, getPlayableCount, TestId, testList, tests } from '../data/tests.ts';
+import { buildFavoriteQuestions, getFavoriteCount, isFavorite, toggleFavorite } from '../services/favorites.ts';
 import { saveState, loadState, clearState } from '../services/storage.ts';
-import { resetState, state } from '../state/quizState.ts';
+import { FavoritableQuestion, resetState, state } from '../state/quizState.ts';
 import { shuffleArray } from '../utils/shuffle.ts';
 import { normalize } from '../utils/normalize.ts';
-import {
-  getCorrectAnswers,
-  hasCorrectAnswer,
-  isAnswerCorrect,
-  isMultipleChoice,
-  PlayableQuestion,
-  Question,
-} from './answer.ts';
+import { getCorrectAnswers, hasCorrectAnswer, isAnswerCorrect, isMultipleChoice, Question } from './answer.ts';
 import { triggerCelebration } from './celebration.ts';
 import { els } from './dom.ts';
 
@@ -21,6 +15,18 @@ function updateStats() {
   els.scoreWrong.textContent = String(state.wrongCount);
   const progress = (state.currentIndex / state.questions.length) * 100;
   els.progressBar.style.width = `${progress}%`;
+}
+
+function updateFavoriteButton(isFav: boolean) {
+  els.favoriteBtn.classList.toggle('is-active', isFav);
+  els.favoriteBtn.textContent = isFav ? '★' : '☆';
+  els.favoriteBtn.setAttribute('aria-pressed', String(isFav));
+}
+
+function toggleCurrentFavorite() {
+  const question = state.questions[state.currentIndex];
+  const isFav = toggleFavorite(question.sourceTestId, question.question_number);
+  updateFavoriteButton(isFav);
 }
 
 function handleOptionClick(element: HTMLElement, text: string, multiple: boolean) {
@@ -60,6 +66,8 @@ function renderQuestion() {
   } else {
     els.qType.classList.add('hidden');
   }
+
+  updateFavoriteButton(isFavorite(question.sourceTestId, question.question_number));
 
   els.optionsList.innerHTML = '';
   state.selectedOptions = [];
@@ -129,16 +137,16 @@ function nextQuestion() {
     showResults();
   }
 
-  if (state.currentIndex >= state.questions.length) {
-    clearState();
+  if (state.currentIndex >= state.questions.length && state.mode === 'test' && state.testId) {
+    clearState(state.testId);
   }
 }
 
 function showQuizChrome() {
-  const test = state.testId ? tests[state.testId] : null;
+  const title = state.mode === 'favorites' ? 'Избранное' : state.testId ? tests[state.testId].title : null;
 
-  document.title = test?.title ?? 'Выберите тест';
-  els.testTitle.textContent = test?.title ?? '';
+  document.title = title ?? 'Выберите тест';
+  els.testTitle.textContent = title ?? '';
   els.testSelectArea.classList.add('hidden');
   els.quizHeader.classList.remove('hidden');
   els.globalActions.classList.remove('hidden');
@@ -164,17 +172,24 @@ function showResults() {
   }
 }
 
-function prepareQuestions(sourceQuestions: Question[], shuffle: boolean): PlayableQuestion[] {
+function prepareQuestions(sourceQuestions: Question[], shuffle: boolean, sourceTestId: TestId): FavoritableQuestion[] {
   const playable = sourceQuestions.filter(hasCorrectAnswer);
   const source = shuffle ? shuffleArray(playable) : [...playable];
 
   return source.map((question) => ({
     ...question,
     options: shuffleArray(question.options),
+    sourceTestId,
   }));
 }
 
 function restartQuiz(shuffle = false) {
+  if (state.mode === 'favorites') {
+    startFavorites();
+
+    return;
+  }
+
   if (!state.testId) return;
 
   clearState(state.testId);
@@ -195,6 +210,20 @@ export function showTestSelect() {
 function renderTestSelect() {
   els.testSelectList.innerHTML = '';
 
+  const favoriteCount = getFavoriteCount();
+
+  if (favoriteCount > 0) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'select-test-btn select-favorites-btn';
+    button.innerHTML = `
+      <span class="select-test-title">★ Избранное</span>
+      <span class="select-test-meta">${formatQuestionCount(favoriteCount)}</span>
+    `;
+    button.addEventListener('click', startFavorites);
+    els.testSelectList.appendChild(button);
+  }
+
   testList.forEach((test) => {
     const button = document.createElement('button');
     button.type = 'button';
@@ -213,6 +242,26 @@ export function startTest(testId: TestId) {
   initQuiz();
 }
 
+export function startFavorites() {
+  const questions = buildFavoriteQuestions();
+
+  if (questions.length === 0) return;
+
+  resetState();
+  state.mode = 'favorites';
+  state.questions = questions;
+  state.currentIndex = 0;
+  state.selectedOptions = [];
+  state.isAnswered = false;
+
+  showQuizChrome();
+  els.quizArea.classList.remove('hidden');
+  els.resultsArea.classList.add('hidden');
+
+  updateStats();
+  renderQuestion();
+}
+
 export function initQuiz(shuffle = false) {
   if (!state.testId) {
     showTestSelect();
@@ -224,7 +273,7 @@ export function initQuiz(shuffle = false) {
 
   if (!loadState(state.testId) || shuffle) {
     state.testId = bank.id;
-    state.questions = prepareQuestions(bank.questions, shuffle);
+    state.questions = prepareQuestions(bank.questions, shuffle, bank.id);
     state.currentIndex = 0;
     state.correctCount = 0;
     state.wrongCount = 0;
@@ -257,6 +306,7 @@ export function initQuiz(shuffle = false) {
 export function bindQuizEvents() {
   els.checkBtn.addEventListener('click', checkAnswer);
   els.nextBtn.addEventListener('click', nextQuestion);
+  els.favoriteBtn.addEventListener('click', toggleCurrentFavorite);
   els.restartBtn.addEventListener('click', () => restartQuiz(false));
   els.globalShuffleBtn.addEventListener('click', () => restartQuiz(true));
   els.restartResultsBtn.addEventListener('click', () => restartQuiz(false));
