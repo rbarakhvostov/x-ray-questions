@@ -1,9 +1,12 @@
 import { TestId } from '../data/tests.ts';
 import { PlayableQuestion } from '../quiz/answer.ts';
 
+export type FavoritableQuestion = PlayableQuestion & { sourceTestId: TestId };
+
 export interface QuizState {
   testId: TestId | null;
-  questions: PlayableQuestion[];
+  mode: 'test' | 'favorites';
+  questions: FavoritableQuestion[];
   currentIndex: number;
   correctCount: number;
   wrongCount: number;
@@ -16,6 +19,7 @@ export interface QuizState {
 export function createInitialState(): QuizState {
   return {
     testId: null,
+    mode: 'test',
     questions: [],
     currentIndex: 0,
     correctCount: 0,

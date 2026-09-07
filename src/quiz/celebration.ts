@@ -12,45 +12,21 @@ interface CelebrationConfig {
 const CELEBRATIONS: CelebrationConfig[] = [
   {
     streakMod: 100,
-    className: 'celebration-bigheart',
+    className: 'celebration-congratulations',
     emoji: '🥳🥳🥳',
     text: 'Ты профи!!!',
   },
   {
     streakMod: 50,
-    className: 'celebration-bigheart',
-    emoji: '❤️‍🔥❤️‍🔥❤️‍🔥',
-    text: 'Люблю тебя!!!',
+    className: 'celebration-brain',
+    emoji: '🧠🧠🧠',
+    text: 'Отличный результат!!!',
   },
   {
     streakMod: 25,
-    className: 'celebration-brain',
-    emoji: '🧠🧠🧠',
-    text: 'Мегамозг!!!',
-  },
-  {
-    streakMod: 20,
     className: 'celebration-flowers',
     emoji: '🌷🌻🌹',
-    text: 'Вау. Супeр!',
-  },
-  {
-    streakMod: 15,
-    className: 'celebration-fire',
-    emoji: '🔥🔥🔥',
-    text: 'Ну ты и голова!',
-  },
-  {
-    streakMod: 10,
-    className: 'celebration-salute',
-    emoji: '🎉🎊🥳',
-    text: 'Ты умничка!!!',
-  },
-  {
-    streakMod: 5,
-    className: 'celebration-heart',
-    emoji: '❤️',
-    text: 'Молодец!',
+    text: 'Молодец!!!',
   },
 ];
 

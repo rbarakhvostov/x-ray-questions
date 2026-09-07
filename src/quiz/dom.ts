@@ -11,6 +11,7 @@ export const els = {
   qNumber: document.getElementById('q-number')! as HTMLElement,
   qType: document.getElementById('q-type')! as HTMLElement,
   qText: document.getElementById('q-text')! as HTMLElement,
+  favoriteBtn: document.getElementById('favorite-btn')! as HTMLButtonElement,
   optionsList: document.getElementById('options-list')! as HTMLElement,
   checkBtn: document.getElementById('check-btn')! as HTMLButtonElement,
   nextBtn: document.getElementById('next-btn')! as HTMLElement,

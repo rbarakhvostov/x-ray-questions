@@ -9,7 +9,7 @@
   justify-content: center;
   z-index: 9999;
   pointer-events: none;
-  animation: celebrationFade 3s ease-out forwards;
+  animation: celebration-fade 3s ease-out forwards;
 }
 
 .celebration-inner {
@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  animation: celebrationPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: celebration-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .celebration-emoji {
@@ -28,132 +28,96 @@
 .celebration-text {
   font-size: 22px;
   font-weight: 800;
-  color: #000000;
-  background: rgba(255, 255, 255, 1);
+  color: #000;
+  background: rgb(255 255 255 / 100%);
   padding: 14px 28px;
   border-radius: 16px;
-  border: 2px solid #000000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  border: 2px solid #000;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 35%);
   white-space: nowrap;
 }
 
-@keyframes celebrationFade {
+@keyframes celebration-fade {
   0% {
     opacity: 0;
   }
+
   15% {
     opacity: 1;
   }
+
   75% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
-@keyframes celebrationPop {
+@keyframes celebration-pop {
   0% {
     opacity: 0;
     transform: scale(0.3);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.1);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
   }
 }
 
-.celebration-salute .celebration-emoji {
-  animation: saluteBounce 0.6s ease-in-out infinite alternate;
-}
-
-@keyframes saluteBounce {
-  from {
-    transform: translateY(0) rotate(-10deg);
-  }
-  to {
-    transform: translateY(-20px) rotate(10deg);
-  }
-}
-
-.celebration-heart .celebration-emoji {
-  animation: heartBeat 1s ease-in-out infinite;
-}
-
-@keyframes heartBeat {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  15% {
-    transform: scale(1.3);
-  }
-  30% {
-    transform: scale(1);
-  }
-  45% {
-    transform: scale(1.2);
-  }
-}
-
-.celebration-fire .celebration-emoji {
-  animation: fireFlicker 0.4s ease-in-out infinite alternate;
-}
-
-@keyframes fireFlicker {
-  from {
-    transform: scale(1) rotate(-2deg);
-  }
-  to {
-    transform: scale(1.15) rotate(2deg);
-  }
-}
-
 .celebration-flowers .celebration-emoji {
-  animation: flowersSway 0.8s ease-in-out infinite alternate;
+  animation: flowers-sway 0.8s ease-in-out infinite alternate;
 }
 
-@keyframes flowersSway {
+@keyframes flowers-sway {
   from {
     transform: scale(1) rotate(-3deg);
   }
+
   to {
     transform: scale(1.1) rotate(3deg);
   }
 }
 
 .celebration-brain .celebration-emoji {
-  animation: brainPulse 0.7s ease-in-out infinite alternate;
+  animation: brain-pulse 0.7s ease-in-out infinite alternate;
 }
 
-@keyframes brainPulse {
+@keyframes brain-pulse {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.2);
   }
 }
 
-.celebration-bigheart .celebration-emoji {
-  animation: bigHeartBeat 0.6s ease-in-out infinite;
+.celebration-congratulations .celebration-emoji {
+  animation: congratulations-beat 0.6s ease-in-out infinite;
 }
 
-@keyframes bigHeartBeat {
+@keyframes congratulations-beat {
   0%,
   100% {
     transform: scale(1);
   }
+
   20% {
     transform: scale(1.35);
   }
+
   40% {
     transform: scale(1);
   }
+
   60% {
     transform: scale(1.25);
   }
