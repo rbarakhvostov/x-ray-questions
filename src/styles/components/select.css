@@ -2,6 +2,31 @@
   text-align: center;
 }
 
+.select-photo {
+  height: 348px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+}
+
+.select-greeting {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 28px;
+  animation: greeting-pop 1.6s ease-in-out infinite;
+}
+
+@keyframes greeting-pop {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
 .select-title {
   font-size: 24px;
   font-weight: 700;
